@@ -1,0 +1,12 @@
+body {
+    font-family: Montserrat, Verdana, Arial, sans-serif; 
+}
+
+header {
+    background-color: #ccc;
+    display: grid;
+    grid-template-columns: 600px;
+    align-items: center;
+    text-align: center;
+    
+}
