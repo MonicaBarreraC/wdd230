@@ -5,39 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Assignment portal for Mónica Barrera in WDD 230: Web Frontend Development at Brigham Young University - Idaho. This contains the assignments for each lesson.">
+    <link rel="stylesheet" href="/css/style.css">
+    <script defer src="js/dates.js"></script>
     <title>Course Home Page</title>
 </head>
 
 <body>
-    <header>
-        <img src="C:\Users\Mony\Documents\BYU\Winter 2022\Web Frontend Development I\wdd230-1\home_page\byu_picture.png"
-            alt="Profile Image">
-        <h1>Mónica Barrera Chávez</h1>
-    </header>
-    <main>
-        <h2>WDD 230: Assignment Portal</h2>
-        <ul>
-            <li><a href="lesson2.html">Lesson 02: Title</a></li>
-            <li><a>Lesson 03: Title</a></li>
-            <li><a>Lesson 04: Title</a></li>
-            <li><a>Lesson 05: Title</a></li>
-            <li><a>Lesson 06: Title</a></li>
-            <li><a>Lesson 07: Title</a></li>
-            <li><a>Lesson 08: Title</a></li>
-            <li><a>Lesson 09: Title</a></li>
-            <li><a>Lesson 10: Title</a></li>
-            <li><a>Lesson 11: Title</a></li>
-        </ul>
-    </main>
-    <footer>
-        <p>
-            &copy; 2022 .:|:. Mónica Barrera Chávez .:|:. Mexico
-        </p>
-        <p>
-            Last Updated: 08/01/2022 06:28:46
-        </p>
-    </footer>
+    <div id="content">
+        <header>
+            <div class="prof_image">
+                <img src="/images/byu_picture.png" alt="Profile Image" height="200">
+            </div>
+            <h1 class="title_name">Mónica Barrera Chávez</h1>
+        </header>
+        <main>
+            <h2 class="subtitle_index">WDD 230: Assignment Portal</h2>
+            <ul class="lessons">
+                <li><a href="lesson2.html">Lesson 02: Title</a></li>
+                <li><a>Lesson 03: Title</a></li>
+                <li><a>Lesson 04: Title</a></li>
+                <li><a>Lesson 05: Title</a></li>
+                <li><a>Lesson 06: Title</a></li>
+                <li><a>Lesson 07: Title</a></li>
+                <li><a>Lesson 08: Title</a></li>
+                <li><a>Lesson 09: Title</a></li>
+                <li><a>Lesson 10: Title</a></li>
+                <li><a>Lesson 11: Title</a></li>
+            </ul>
+        </main>
+        <footer>
+            <p>
+                &copy; 2022 .:|:. Mónica Barrera Chávez .:|:. Mexico
+            </p>
+            <p id="lastmod">
+            </p>
+        </footer>
+    </div>
 </body>
 
 </html>
