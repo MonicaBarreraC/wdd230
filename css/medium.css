@@ -1,0 +1,15 @@
+@media (min-width: 32.5em){
+
+    .title_name {
+        font-size: 37px;
+    }
+
+    .subtitle_index {
+        font-size: 30px;
+        padding-top: 0.3em;
+    }
+
+    .lessons {
+        font-size: 20px;
+    }
+}

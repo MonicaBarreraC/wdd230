@@ -37,14 +37,14 @@ footer {
 }
 
 .subtitle_index {
-    font-size: 30px;
+    font-size: 23px;
     text-shadow: 4px 4px 8px #1F0A1E;
     padding-top: 0.3em;
 }
 
 .lessons {
     font-family: 'Lato', 'Segoe UI', Tahoma, Verdana, sans-serif, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .prof_img img {
@@ -54,6 +54,6 @@ footer {
 
 .title_name {
     grid-column: 2 / 4;
-    font-size: 37px;
+    font-size: 32px;
     text-shadow: 4px 4px 4px #1F0A1E;
 }
