@@ -6,10 +6,11 @@
 
     .subtitle_index {
         font-size: 30px;
-        padding-top: 0.3em;
+        text-shadow: 4px 4px 8px #1F0A1E;
     }
 
     .lessons {
         font-size: 20px;
     }
+    
 }
