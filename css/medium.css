@@ -12,5 +12,14 @@
     .lessons {
         font-size: 20px;
     }
+
+    .desing-principles-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+    }
     
+    .principle-3{
+        grid-column: 1 / 3;
+    }
 }

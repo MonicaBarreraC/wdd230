@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-@media (min-width: 16.25em) {
+@media (min-width: 1em) {
 
     #content {
         font-family: Montserrat, Verdana, Arial, sans-serif;
@@ -53,6 +53,13 @@
         margin-bottom: 15px;
     }
 
+    .footer-lessons {
+        margin-top: 1em;
+        border-radius: 0px;
+        box-shadow: none;
+        margin-bottom: 15px;
+    }
+
     .prof_img img {
         grid-column: 1 / 2;
 
@@ -64,7 +71,29 @@
         text-shadow: 4px 4px 4px #1F0A1E;
     }
 
-    .desing-principles-grid  {
-        background-color: #ccc;
+    .desing-principles-grid section{
+        background-color: #edf2f4;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .desing-principles-grid  h3{
+        background-color: #2b2d42;
+        color: white;
+        padding: 0.9em;
+        margin-top: -0.1em;
+        text-align: center;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .desing-principles-grid p {
+        padding-left: 1em;
+        padding-right: 1em;
+        font-family: Lato, Montserrat, Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .desing-principles-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1em;
     }
 }
