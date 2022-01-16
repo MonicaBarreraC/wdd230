@@ -1,61 +1,70 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-#content {
-    font-family: Montserrat, Verdana, Arial, sans-serif;
-    max-width: 960px;
-    margin: 0 auto;
-    align-items: center;
-}
+@media (min-width: 16.25em) {
 
-main {
-    padding-left: 2em;
-}
+    #content {
+        font-family: Montserrat, Verdana, Arial, sans-serif;
+        max-width: 960px;
+        margin: 0 auto;
+        align-items: center;
+    }
 
-header {
-    padding: 1em;
-}
+    main {
+        padding-left: 2em;
+    }
 
-.main_header {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-}
+    header {
+        padding: 1em;
+    }
 
-footer {
-    padding: 0.3em;
-}
+    .main_header {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
 
-img {
-    max-width: 100%;
-    box-shadow: 5px 5px 5px #1F0A1E;
-}
+    footer {
+        padding: 0.3em;
+    }
 
-header,
-footer {
-    background-color: #8F008C;
-    color: white;
-    box-shadow: 5px 5px 5px #1F0A1E;
-    text-align: center;
-    align-items: center;
-    border-radius: 20px;
-}
+    img {
+        max-width: 100%;
+        box-shadow: 5px 5px 5px #1F0A1E;
+    }
 
-.subtitle_index {
-    font-size: 23px;
-    padding-top: 0.3em;
-}
+    header,
+    footer {
+        background-color: #8F008C;
+        color: white;
+        box-shadow: 5px 5px 5px #1F0A1E;
+        text-align: center;
+        align-items: center;
+        border-radius: 20px;
+    }
 
-.header_lessons {
-    border-radius: 0px;
-}
+    .subtitle_index {
+        font-size: 23px;
+        padding-top: 0.3em;
+    }
 
-.prof_img img {
-    grid-column: 1 / 2;
+    .header_lessons {
+        border-radius: 0px;
+        box-shadow: none;
+        margin-bottom: 15px;
+    }
 
-}
+    .prof_img img {
+        grid-column: 1 / 2;
 
-.title_name {
-    grid-column: 2 / 4;
-    font-size: 32px;
-    text-shadow: 4px 4px 4px #1F0A1E;
+    }
+
+    .title_name {
+        grid-column: 2 / 4;
+        font-size: 32px;
+        text-shadow: 4px 4px 4px #1F0A1E;
+    }
+
+    .desing-principles-grid  {
+        background-color: #ccc;
+    }
 }
