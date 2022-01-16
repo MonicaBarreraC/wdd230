@@ -2,7 +2,7 @@
 
 #content {
     font-family: Montserrat, Verdana, Arial, sans-serif;
-    max-width: 800px;
+    max-width: 960px;
     margin: 0 auto;
     align-items: center;
 }
@@ -12,9 +12,13 @@ main {
 }
 
 header {
-    padding: 1.5em;
+    padding: 1em;
+}
+
+.main_header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
 }
 
 footer {
@@ -31,8 +35,8 @@ footer {
     background-color: #8F008C;
     color: white;
     box-shadow: 5px 5px 5px #1F0A1E;
-    align-items: center;
     text-align: center;
+    align-items: center;
     border-radius: 20px;
 }
 
