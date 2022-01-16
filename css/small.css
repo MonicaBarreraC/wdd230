@@ -45,9 +45,8 @@ footer {
     padding-top: 0.3em;
 }
 
-.lessons {
-    font-family: 'Lato', 'Segoe UI', Tahoma, Verdana, sans-serif, sans-serif;
-    font-size: 18px;
+.header_lessons {
+    border-radius: 0px;
 }
 
 .prof_img img {
