@@ -62,7 +62,7 @@
 
     .prof_img img {
         grid-column: 1 / 2;
-
+        
     }
 
     .title_name {
@@ -89,6 +89,10 @@
         padding-left: 1em;
         padding-right: 1em;
         font-family: Lato, Montserrat, Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .desing-principles-grid img{
+        box-shadow: none;
     }
 
     .desing-principles-grid {
