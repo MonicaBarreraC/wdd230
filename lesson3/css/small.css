@@ -32,6 +32,10 @@ footer {
     border-radius: 8px;
 }
 
+h1, h2 {
+    font-family: Playfair Display;
+}
+
 nav ul {
     list-style-type: none;
     text-align: center;
