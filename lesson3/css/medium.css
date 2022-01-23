@@ -9,4 +9,11 @@
         flex: 1 1 auto;
         margin-bottom: 0.1em;
     }
+
+    .grid-colors{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 20em;
+        padding-left: 0em;
+    }
 }
