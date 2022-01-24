@@ -21,6 +21,8 @@ footer {
 
 img {
     max-width: 100%;
+    display: block;
+    margin: auto auto auto auto;
 }
 
 header,
@@ -87,7 +89,6 @@ ul.grid-colors {
 .grid-1{
     background-color: #29335C;
 }
-
 .grid-2{
     background-color: #8797B2;
 }
