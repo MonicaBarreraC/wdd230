@@ -1,7 +1,5 @@
 @media (min-width: 65em) {
 
-
-
     .main-grid {
         display: grid;
         grid-template-columns: 1fr, 2fr, 1fr;
@@ -15,6 +13,35 @@
         margin: 10px;
         padding: 1em;
     }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 2fr, 1fr;
+        gap: 1em;
+    }
+
+    .address {
+        grid-column: 1 / 2;
+        padding-left: 5em;
+        display: flex;
+        align-items: center;
+        line-height: 1.8;
+    }
+
+    .address img{
+        margin: 0 2em 0 2em;
+    }
+
+    .information {
+        grid-column: 2 / 3;
+        padding-right: 5em;
+        line-height: 1.8;
+    }
+
+    .foot-end {
+        grid-column: 1 / 3;
+    }
+
 
     .events {
         grid-column: 1 / 2;
