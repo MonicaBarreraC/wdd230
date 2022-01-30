@@ -1,11 +1,20 @@
-@media (min-width: 32.5em){
+@media (min-width: 32.5em) {
 
-    nav ul{
-        display: flex;
-        
+    header,
+    footer {
+        background-color: #29335C;
+        color: white;
+        text-align: center;
+        align-items: center;
+        border-radius: 8px;
     }
 
-    nav ul li{
+    nav ul {
+        display: flex;
+
+    }
+
+    nav ul li {
         flex: 1 1 auto;
         margin-bottom: 0.1em;
     }

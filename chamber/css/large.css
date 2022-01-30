@@ -33,7 +33,9 @@
 
     .spotlight p {
         border-color: black;
-        border: black;
+        border: 1px solid;
+        /*padding: 70px 1em 70px 1em;*/ 
+        padding: 1em 1em 125px 1em;
     }
 
     .weather {
