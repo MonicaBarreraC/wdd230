@@ -14,6 +14,14 @@
         padding: 1em;
     }
 
+    header{
+        border-radius: 0 0 6px 6px;
+    }
+
+    footer{
+        border-radius: 6px 6px 0 0;
+    }
+
     .footer-grid {
         display: grid;
         grid-template-columns: 2fr, 1fr;
