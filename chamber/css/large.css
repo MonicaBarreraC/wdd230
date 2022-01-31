@@ -9,13 +9,31 @@
     }
 
     .main-grid div{
-        background-color: #eee;
+        background-color: #BCCBCD;
         margin: 10px;
         padding: 1em;
     }
 
     header{
         border-radius: 0 0 6px 6px;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .logo-header {
+        grid-column: 1 / 3;
+        display: flex;
+        align-items: center;
+    }
+
+    header nav {
+        grid-column: 3 / 7;
+    }
+
+    .social-logos{
+        grid-column: -2;
+        display: flex;
+        padding-left: 50px;
     }
 
     footer{
@@ -87,5 +105,6 @@
         grid-column: 2 / 3;
         grid-row: 3 / 4;
     }
+
 
 }
