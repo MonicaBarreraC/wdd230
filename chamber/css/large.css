@@ -26,6 +26,11 @@
         align-items: center;
     }
 
+    .logo-header h2{
+        padding: 0.5em;
+        margin: 0;
+    }
+
     header nav {
         grid-column: 3 / 7;
     }
