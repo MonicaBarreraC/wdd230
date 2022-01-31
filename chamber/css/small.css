@@ -15,6 +15,15 @@ header {
     padding: 1em;
 }
 
+header p{
+    grid-column: 1 / -1;
+    background-color: rgba(222, 110, 75, 0.6);
+    padding: 0.7em;
+    font-size: 18px;
+    margin: 0.2em -0.5em -0.5em -0.5em;
+    border-radius: 4px;
+}
+
 footer {
     padding: 0.3em;
     margin-top: 1em;
