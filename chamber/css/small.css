@@ -11,8 +11,15 @@ main {
     padding-left: 2em;
 }
 
+.main-grid div{
+    background-color: #BCCBCD;
+    margin: 10px;
+    padding: 1em;
+}
+
 header {
     padding: 1em;
+    border-radius: 0 0 6px 6px;
 }
 
 header p{
@@ -25,9 +32,9 @@ header p{
 }
 
 footer {
+    border-radius: 6px 6px 0 0;
     padding: 0.3em;
     margin-top: 1em;
-    border-radius: 8px, 0, 8px, 0;
 }
 
 footer img{
@@ -45,8 +52,7 @@ footer {
     background-color: #29335C;
     color: white;
     text-align: center;
-    align-items: center;
-    
+    align-items: center;   
 }
 
 h1, h2 {
