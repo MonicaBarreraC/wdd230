@@ -104,7 +104,7 @@ nav button.open {
 
 nav ul.open{
     display: block;
-    border: #BCCBCD solid 1px;
+    border-bottom: white inset 1px;
     margin-bottom: -0.2em;
 }
 
@@ -117,7 +117,7 @@ nav ul.open{
 nav li{
     padding: 0.3em;
     margin-bottom: 0.2em;
-    border-top: #BCCBCD solid 1px;
+    border-top: white outset 1px;
 }
 
 nav a:hover{
