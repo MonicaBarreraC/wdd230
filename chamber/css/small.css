@@ -153,8 +153,6 @@ nav a{
     display: none;
 }
 
-
-
 .spotlight p:not(#spotlight-3){
     border:black solid 1px;
     padding: 1em;
@@ -176,7 +174,28 @@ footer {
     margin-top: 1em;
 }
 
-footer img{
-    max-width: 150px;
+.logo-footer img {
+	max-width: 140px;
+	height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-name span{
+    font-size: 20px;
+}
+
+.footer-name{
+    font-family: Playfair Display; 
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 0.5em;
+}
+
+.foot-end{
+    border-top: white solid 2px;
+    padding-top: 1em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
 }
 
