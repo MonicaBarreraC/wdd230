@@ -1,5 +1,5 @@
 @media (min-width: 32.5em) {
-
+    /*
     header,
     footer {
         background-color: #29335C;
@@ -48,8 +48,8 @@
     .spotlight p {
         border-color: black;
         border: 1px solid;
-        /*padding: 70px 1em 70px 1em;*/ 
-        /*padding: 1em 1em 125px 1em;*/
+        //padding: 70px 1em 70px 1em; 
+        //padding: 1em 1em 125px 1em;
     }
 
     .join {
@@ -92,9 +92,9 @@
 
     .foot-end {
         grid-column: 1 / 3;
-    }
+    }*/
 }
-
+/*
 @media (min-width: 485px) {
 
     .address img{
@@ -109,4 +109,4 @@
         padding: 0 1em 0 1em;
         font-size: 15px;
     }
-}
+}*/

@@ -7,10 +7,6 @@
     align-items: center;
 }
 
-main {
-    padding-left: 2em;
-}
-
 .main-grid div{
     background-color: #BCCBCD;
     margin: 10px;

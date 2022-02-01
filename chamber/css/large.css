@@ -1,5 +1,5 @@
 @media (min-width: 65em) {
-
+/*
     .main-grid {
         display: grid;
         grid-template-columns: 1fr, 2fr, 1fr;
@@ -92,7 +92,7 @@
     .spotlight p {
         border-color: black;
         border: 1px solid;
-        /*padding: 70px 1em 70px 1em;*/ 
+        //padding: 70px 1em 70px 1em;
         padding: 1em 1em 125px 1em;
     }
 
@@ -111,5 +111,5 @@
         grid-row: 3 / 4;
     }
 
-
+*/
 }
