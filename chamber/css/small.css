@@ -22,14 +22,14 @@ h1, h2, h3, h4 {
 img {
     max-width: 100%;
     display: block;
-    margin: auto auto auto auto;
+    /*margin: auto auto auto auto;*/
 }
 
 header {
     padding: 1em;
     border-radius: 0 0 6px 6px;
-    /*display: grid;
-    grid-template-columns: repeat(6, 1fr);*/
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
 }
 
 header p{
@@ -39,6 +39,35 @@ header p{
     font-size: 18px;
     margin: 0.2em -0.5em -0.5em -0.5em;
     border-radius: 4px;
+}
+
+.logo-name{
+    grid-column: 2 / 5;
+    font-size: 14px;
+    line-height: 0.9;
+    letter-spacing: 2px;
+}
+
+.sub-title{
+    font-size: 13px;
+}
+
+.logo-header img {
+    grid-column: 1 / 2;
+	max-width: 90px;
+	height: auto;
+}
+
+.social-logos {
+    grid-column: 6 / 7;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.social-logos img{
+    max-width: 30px;
+    height: auto;
+    margin-left: 0.2em;
 }
 
 .main-grid div{
@@ -54,18 +83,29 @@ nav ul {
     font-size: 18px;
     padding-left: 0;
     display: none;
+    
 }
 
 nav button {
+    grid-column: 6 / 7;
     margin: .2rem 2vw;
     background: transparent;
     border: none;
     font-size: 2rem;
     color: white;
+    position: absolute;
+    top: 40px;
+    right: 3px;
+}
+
+nav button.open {
+    right: 8px;
 }
 
 nav ul.open{
     display: block;
+    border: #BCCBCD solid 1px;
+    margin-bottom: -0.2em;
 }
 
 #hamburgerBtn span:nth-child(1) {display: block;}
@@ -75,8 +115,9 @@ nav ul.open{
 #hamburgerBtn.open span:nth-child(2) {display: block;}
 
 nav li{
-    padding: 0.6em;
-    margin-bottom: 0.5em;
+    padding: 0.3em;
+    margin-bottom: 0.2em;
+    border-top: #BCCBCD solid 1px;
 }
 
 nav a:hover{
@@ -88,9 +129,16 @@ nav a:hover{
     padding: 1em;
 }
 
+nav{
+    grid-column: 1 / -1;
+    margin-top: 0.6em;
+    background-color: #29335C;
+}
+
 nav a{
     color: white;
     text-decoration: none;   
+    
 }
 
 footer {
