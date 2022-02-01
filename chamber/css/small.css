@@ -53,7 +53,26 @@ nav ul {
     align-items: center;
     font-size: 18px;
     padding-left: 0;
+    display: none;
 }
+
+nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+}
+
+nav ul.open{
+    display: block;
+}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
 
 nav li{
     padding: 0.6em;
