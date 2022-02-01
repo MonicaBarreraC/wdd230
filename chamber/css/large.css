@@ -16,6 +16,11 @@
 
     .logo-name {
         grid-column: 2 / 3;
+        font-size: 16px;
+    }
+
+    .logo-name span{
+        font-size: 14px;
     }
 
     nav {
