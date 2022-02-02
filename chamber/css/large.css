@@ -90,7 +90,7 @@
     }
 
     .spotlight p{
-        display: flexbox;
+        display: flex;
     }
 
     #spotlight-3 {
