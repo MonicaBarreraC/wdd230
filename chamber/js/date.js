@@ -1,3 +1,4 @@
+/*    M E N U    */
 function toggleMenu(){
     document.getElementById("menuNav").classList.toggle("open");
     document.getElementById("hamburgerBtn").classList.toggle("open");
@@ -20,3 +21,7 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 // long, medium, short options -> more options
 
 datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
+
+/*    B A N N E R    */
+let day = now.getDay();
+const banner = document.querySelector("#banner");

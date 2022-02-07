@@ -12,10 +12,6 @@
         column-gap: 2px;
     }
 
-    .main-grid div{
-        padding-bottom: 9em;
-    }
-
     .hero {
         grid-column: 1 / -1;
         grid-row: 1 / 2;
@@ -33,10 +29,10 @@
         grid-template-columns: repeat(2, 1fr);
         column-gap: 1em;
     }
-
-    .spotlight p:not(#spotlight-3){
+/*
+    .spotlight div:not(#spotlight-3){
         padding-bottom: 10em;
-    }
+    }*/
 
     .join {
         grid-column: 1 / -1;

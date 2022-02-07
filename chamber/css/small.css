@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+#banner{
+    background-color: rgba(222, 110, 75, 0.7);
+    font-family: Montserrat, Verdana, Arial, sans-serif;
+}
+
+#banner p{
+    display: flex;
+    margin: 0;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
 #content {
     font-family: Montserrat, Verdana, Arial, sans-serif;
     max-width: 1300px;
@@ -15,7 +28,7 @@ footer {
     align-items: center;   
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h6 {
     font-family: Playfair Display;
 }
 
@@ -91,7 +104,7 @@ nav button {
     font-size: 2rem;
     color: white;
     position: absolute;
-    top: 40px;
+    top: 3.3rem;
     right: 3px;
 }
 
@@ -144,19 +157,43 @@ nav a{
 .main-grid div{
     display: grid;
     background-color: #BCCBCD;
-    margin: 10px;
+    margin: 1em;
     padding: 1em;
-    padding-bottom: 7em;
+    /*column-gap: 1em;
+    row-gap: 1em;*/
+}
+
+h3, h4{
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    line-height: 1.5;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+}
+
+span.more-info {
+    justify-content: flex-end;
+    color: white;
+}
+
+div.hero {
+    padding: 0;
+    object-fit: cover;
 }
 
 .join {
     display: none;
 }
 
-.spotlight p:not(#spotlight-3){
+.spotlight div:not(#spotlight-3){
     border:black solid 1px;
     padding: 1em;
-    padding-bottom: 7em;
+    /*padding-bottom: 7em;*/
     margin: 0 0 0 0;
 }
 
