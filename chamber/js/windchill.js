@@ -1,16 +1,12 @@
 // Windchill Calculation
 
-/* SPECS
-
-*/
-
 let temperature = document.querySelector("#temperature").innerHTML
 let degrees = document.querySelector("#degrees").innerHTML
 let wind_speed = document.querySelector("#wind-speed").innerHTML
 let speed_units = document.querySelector("#speed-units").innerHTML
 
 //console.log(`${degrees}: ${temperature}`) // Del
-console.log(wind_speed) //Del
+//console.log(wind_speed) //Del
 
 // Convert F° to C°
 if (degrees == "C"){
@@ -28,9 +24,11 @@ if (temperature <= 50 && wind_speed >= 3){
     document.querySelector("#wind-chill").innerHTML = wind_chill
 }
 else{
-    console.log("Wind Chill Not Applicable")
-    const wind_chill = calc_wind_chill(50, 3)
-    console.log(`Example Wind Chill ${wind_chill}`)
+    //console.log("Wind Chill Not Applicable") // Del
+    document.querySelector("#wind-chill").innerHTML = "N/A"
+
+    /*const wind_chill = calc_wind_chill(50, 3)
+    console.log(`Example Wind Chill ${wind_chill}`)*/
 }
 
 function fahrenheit_to_celsius(temperature){
