@@ -32,7 +32,7 @@ h1, h2, h3, h4, h6 {
     font-family: Playfair Display;
 }
 
-img {
+img, picture {
     max-width: 100%;
     display: block;
     /*margin: auto auto auto auto;*/

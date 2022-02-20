@@ -57,7 +57,12 @@
 
         <main class="main-grid">
             <div class="hero">
-                <img src="images/Conkal_Hero.jpeg">
+                <picture>
+                    <source srcset="images/example_img400.png" media="(min-width: 34em) and (max-width: 64em)">
+                    <source srcset="images/example_img600.png" media="(min-width: 65em)">
+                    <img src="images/example_img250.png" alt="Example Image">
+                    <!--img src="images/Conkal_Hero.jpeg"-->
+                </picture>
                 <div class="joinBtn">
                     Join the Chamber
                 </div>
