@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <script src="js/date.js" defer></script>
+    <script src="js/windchill.js" defer></script>
     <title>Conkal CC - Home</title>
 </head>
 
@@ -90,15 +91,15 @@
                 <div class="weather-grid">
                     <img src="#" alt="Image">
                     <p class="weather-degrees">
-                        27°C
+                        <span id="temperature">27</span>°<span id="dergees">C</span>
                     </p>
                     <p class="weather-name">
                         Partly Cloudy
                     </p>
                     <p class="weather-wind">
-                        Wind Speed: 2.5km/h
+                        Wind Speed: <span id="wind-speed">2.5</span> km/h
                         <br>
-                        Wind Chill: N/A
+                        Wind Chill: <span id="wind-chill">N/A</span>
                     </p>
                 </div>
 
