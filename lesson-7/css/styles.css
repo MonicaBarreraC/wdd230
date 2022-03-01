@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+h1 {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+picture{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
+.img-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
