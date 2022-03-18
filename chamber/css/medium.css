@@ -88,4 +88,11 @@
         grid-row: 3 / 4;
         font-size: 16px;
     }
+
+    .discover-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+        margin: 1em;
+    }
 }

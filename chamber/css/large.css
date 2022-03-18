@@ -118,4 +118,11 @@
         grid-column: 2 / 4;
         grid-row: 3 / 4;
     }
+
+    .discover-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
+        margin: 1em;
+    }
 }
