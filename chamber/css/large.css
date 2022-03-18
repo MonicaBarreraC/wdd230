@@ -125,4 +125,8 @@
         padding: 0;
         margin: 1em;
     }
+
+    .discover-grid img:hover {
+        box-shadow: 0 0 50px #5b5d63;
+    }
 }
