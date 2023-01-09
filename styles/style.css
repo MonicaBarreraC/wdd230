@@ -39,3 +39,12 @@ main {
 .lessons-list li {
     line-height: 1.5;
 }
+
+.lessons-list li a {
+    font-weight: bold;
+}
+
+.lessons-list li a:hover {
+    color: #58A4B0;
+    text-decoration: none;
+}
