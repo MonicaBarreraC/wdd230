@@ -1,8 +1,39 @@
 @media (min-width: 1em) {
 
-    .desing-principles-grid section{
-        background-color: #edf2f4;
-        border-radius: 10px 10px 0 0;
+    body {
+        font-family: 'Montserrat', sans-serif;
+        max-width: 940px;
+        margin: 0 auto;
+        background: #F9F9F9;
+    }
+    
+    header, footer{
+        text-align: center;
+    }
+    
+    .banner {
+        align-items: center;
+    }
+    
+    .banner, footer, .banner-temporal {
+        background-color: #0B3954;
+        color: #F9F9F9;
+        padding: 1em;
+        border-radius: 10px;
+    }
+
+    .title-banner {
+        font-family: 'Libre Baskerville', serif;
+        margin-bottom: 1.1em;
+    }
+
+    .home {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #0B3954;
+        background-color: rgba(250, 255, 247, 10);
+        padding: 0.5em;
+        border-radius: 5px;
     }
 
 }
