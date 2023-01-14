@@ -1,6 +1,6 @@
-@media (min-width: 32.5em){
+@media screen and (min-width: 32.5em){
 
-    .title_name {
-        font-size: 37px;
+    main section:nth-child(3) {
+        grid-column: span 2;
     }
 }

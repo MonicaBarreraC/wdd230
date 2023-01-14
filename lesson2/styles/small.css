@@ -1,4 +1,4 @@
-@media (min-width: 1em) {
+@media screen and (min-width: 1em) {
 
     body {
         font-family: 'Montserrat', sans-serif;
@@ -40,7 +40,7 @@
 
     main {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
     }
 
     section {
