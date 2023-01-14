@@ -2,6 +2,7 @@
 
     body {
         font-family: 'Montserrat', sans-serif;
+        max-width: 940px;
         margin: 0 auto;
         background: #F9F9F9;
     }
@@ -29,18 +30,20 @@
         text-transform: uppercase;
         text-decoration: none;
         color: #0B3954;
-        background-color: rgba(250, 255, 247, 10);
+        background-color: #f0f0f0;
         padding: 0.6em;
         border-radius: 5px;
     }
 
     .home:hover {
         font-weight: bolder;
+        padding: 0.75em;
+        transition: 0.5s;
     }
 
     main {
         display: grid;
-        grid-template-columns: 1fr;
+        /**/
     }
 
     section {
@@ -52,14 +55,20 @@
         background-color: #AB3428;
         color: #f0f0f0;
         border-radius: 10px 10px 0 0;
-        text-transform: uppercase;
         text-align: center;
-        padding: 0.5em 0;
+        padding: 1em;
         margin-top: 0;
     }
 
     section p {
         margin: 1em;
+        line-height: 1.5;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
     }
 
 }
