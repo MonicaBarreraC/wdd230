@@ -1,0 +1,14 @@
+@media screen and (min-width: 32.5em) {
+    
+    .profile-picture {
+        margin: 1em auto;
+    }
+
+    .banner, .banner-temporal {
+        background: linear-gradient(#0b3941, #0B3954);
+    }
+
+    h2{
+        font-size: 32px;
+    }
+}
