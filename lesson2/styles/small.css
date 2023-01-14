@@ -60,6 +60,11 @@
         margin-top: 0;
     }
 
+    .company-name {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
     section p {
         margin: 1em;
         line-height: 1.5;
