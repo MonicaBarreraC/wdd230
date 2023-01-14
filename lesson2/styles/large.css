@@ -1,0 +1,8 @@
+@media (min-width: 65em) {
+
+    .desing-principles-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+    }
+}
