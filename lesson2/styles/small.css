@@ -2,7 +2,6 @@
 
     body {
         font-family: 'Montserrat', sans-serif;
-        max-width: 940px;
         margin: 0 auto;
         background: #F9F9F9;
     }
@@ -15,11 +14,10 @@
         align-items: center;
     }
     
-    .banner, footer, .banner-temporal {
+    .banner, footer {
         background-color: #0B3954;
         color: #F9F9F9;
         padding: 1em;
-        border-radius: 10px;
     }
 
     .title-banner {
@@ -32,8 +30,36 @@
         text-decoration: none;
         color: #0B3954;
         background-color: rgba(250, 255, 247, 10);
-        padding: 0.5em;
+        padding: 0.6em;
         border-radius: 5px;
+    }
+
+    .home:hover {
+        font-weight: bolder;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    section {
+        background-color: #f0f0f0;
+        margin: 10px;
+    }
+
+    .subtitle {
+        background-color: #AB3428;
+        color: #f0f0f0;
+        border-radius: 10px 10px 0 0;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 0.5em 0;
+        margin-top: 0;
+    }
+
+    section p {
+        margin: 1em;
     }
 
 }
