@@ -1,15 +1,5 @@
 @media screen and (min-width: 65em) {
 
-    main {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    main section:nth-child(3) {
-        grid-column: auto;
-    }
-
-    section p {
-        text-align: left;
-    }
+    /**/
+    
 }

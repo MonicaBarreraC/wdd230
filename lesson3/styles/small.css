@@ -10,6 +10,32 @@
     header, footer{
         text-align: center;
     }
+
+    nav ul {
+        list-style: none;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        flex: 1 1 auto;
+        padding: 0.5em;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+    }
+    ul {
+        padding-inline-start: 0;
+    }
+
+    .active {
+        border: none;
+        background-color: #44617e;
+    }
     
     .banner {
         align-items: center;
