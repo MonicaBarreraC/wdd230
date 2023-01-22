@@ -79,7 +79,7 @@
         font-family: 'Libre Baskerville', serif;
     }
 
-    main ul {
+    main ul.colors {
         list-style: none;
         overflow: hidden;
         display: flex;
@@ -87,10 +87,31 @@
         padding-inline-start: 0;
     }
 
-    main ul li {
+    main ul.colors li {
         flex: 1 1 auto;
-        padding: 0.5em;
+        padding: 1em;
         text-align: center;
+        font-weight: bold;
+    }
+
+    .color1 {
+        background-color: #0B3954;
+    }
+
+    .color2 {
+        background-color: #8797B2;
+    }
+
+    .color3 {
+        background-color: #F1FFE7;
+    }
+
+    .color4 {
+        background-color: #F49E4C;
+    }
+
+    .color5 {
+        background-color: #AB3428;
     }
 
     img {

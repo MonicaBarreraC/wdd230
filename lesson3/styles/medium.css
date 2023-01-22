@@ -10,8 +10,12 @@
         background: none;
     }
 
-    main ul {
+    main ul.colors {
         flex-direction: row;
+    }
+
+    main ul.colors li {
+        padding: 4em 1em;
     }
 
     img {
