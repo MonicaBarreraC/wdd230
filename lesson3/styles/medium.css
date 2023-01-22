@@ -1,7 +1,0 @@
-@media screen and (min-width: 32.5em){
-
-    main section:nth-child(3) {
-        grid-column: span 2;
-    }
-
-}
