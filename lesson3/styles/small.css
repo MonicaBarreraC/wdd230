@@ -19,7 +19,6 @@
         background-color: #0B3954;
         color: #F9F9F9;
         padding: 1em;
-        border-radius: 5px;
     }
 
     .title-banner {
@@ -28,7 +27,6 @@
     }
 
     .home {
-        display: inline-block;
         text-transform: uppercase;
         text-decoration: none;
         color: #0B3954;
@@ -43,13 +41,40 @@
         transition: 0.5s;
     }
 
-    /*
+    main {
+        display: grid;
+        /**/
+    }
+
+    section {
+        background-color: #f0f0f0;
+        margin: 10px;
+    }
+
+    .subtitle {
+        background-color: #AB3428;
+        color: #f0f0f0;
+        border-radius: 10px 10px 0 0;
+        text-align: center;
+        padding: 1em;
+        margin-top: 0;
+    }
+
+    .company-name {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    section p {
+        margin: 1em;
+        line-height: 1.5;
+        text-align: center;
+    }
+
     img {
         max-width: 100%;
         display: block;
         margin: 0 auto;
     }
-    */
-
 
 }
