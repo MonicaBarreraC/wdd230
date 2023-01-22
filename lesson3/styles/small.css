@@ -16,6 +16,7 @@
         overflow: hidden;
         display: flex;
         flex-direction: column;
+        padding-inline-start: 0;
     }
 
     nav ul li {
@@ -28,13 +29,10 @@
         font-weight: bold;
         color: white;
     }
-    ul {
-        padding-inline-start: 0;
-    }
 
     .active {
         border: none;
-        background-color: #44617e;
+        background-color: #8797B2;
     }
     
     .banner {
@@ -69,11 +67,41 @@
         transition: 0.5s;
     }
 
-/*
+    main {
+        margin: 25px;
+    }
+
+    main p {
+        line-height: 1.5;
+    }
+
+    h2, h3 {
+        font-family: 'Libre Baskerville', serif;
+    }
+
+    main ul {
+        list-style: none;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding-inline-start: 0;
+    }
+
+    main ul li {
+        flex: 1 1 auto;
+        padding: 0.5em;
+        text-align: center;
+    }
+
     img {
         max-width: 100%;
         display: block;
+        margin: 20px auto;
+    }
+
+    .logo {
+        float: none;
         margin: 0 auto;
     }
-*/
+
 }

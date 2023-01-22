@@ -10,4 +10,17 @@
         background: none;
     }
 
+    main ul {
+        flex-direction: row;
+    }
+
+    img {
+        float: left;
+        margin: 0 20px;
+    }
+
+    h2 {
+        padding-top: 10px;
+    }
+
 }
