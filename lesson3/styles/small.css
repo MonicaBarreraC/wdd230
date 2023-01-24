@@ -71,7 +71,7 @@
         margin: 25px;
     }
 
-    main p {
+    main p, main ul{
         line-height: 1.5;
     }
 
