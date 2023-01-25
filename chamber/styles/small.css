@@ -2,9 +2,8 @@
 
     body {
         font-family: 'Montserrat', sans-serif;
-        max-width: 940px;
         margin: 0 auto;
-        background: #F9F9F9;
+        /*background: #F9F9F9;*/
     }
     
     header, footer{
@@ -35,7 +34,7 @@
         border: none;
         background-color: #8797B2;
     }
-    
+*/    
     .banner {
         align-items: center;
     }
@@ -44,14 +43,13 @@
         background-color: #0B3954;
         color: #F9F9F9;
         padding: 1em;
-        border-radius: 5px;
     }
 
     .title-banner {
         font-family: 'Libre Baskerville', serif;
         margin-bottom: 1.1em;
     }
-
+/*
     .home {
         display: inline-block;
         text-transform: uppercase;
@@ -67,11 +65,19 @@
         padding: 0.75em;
         transition: 0.5s;
     }
+*/
 
     main {
-        margin: 25px;
+        margin: 20px auto;
     }
 
+    main section {
+        background: #F9F9F9;
+        height: 150px;
+        margin: 10px;
+        padding: 15px;
+    }
+/*
     main p, main ul{
         line-height: 1.5;
     }
