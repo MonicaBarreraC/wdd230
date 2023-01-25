@@ -1,5 +1,4 @@
 // Current Date
-//document.querySelector("#current-date").textContent = `${new Date().toLocaleDateString('en-uk', {weekday: "long"})}`;
 document.querySelector("#current-date").textContent = `${new Date().toLocaleDateString('en-uk', {dateStyle: "full"})}`;
 
 // Get Year
