@@ -1,0 +1,128 @@
+@media screen and (min-width: 1em) {
+
+    /*body {
+        font-family: 'Montserrat', sans-serif;
+        max-width: 940px;
+        margin: 0 auto;
+        background: #F9F9F9;
+    }
+    
+    header, footer{
+        text-align: center;
+    }
+
+    nav ul {
+        list-style: none;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding-inline-start: 0;
+    }
+
+    nav ul li {
+        flex: 1 1 auto;
+        padding: 0.5em;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+    }
+
+    .active {
+        border: none;
+        background-color: #8797B2;
+    }
+    
+    .banner {
+        align-items: center;
+    }
+    
+    .banner, footer {
+        background-color: #0B3954;
+        color: #F9F9F9;
+        padding: 1em;
+        border-radius: 5px;
+    }
+
+    .title-banner {
+        font-family: 'Libre Baskerville', serif;
+        margin-bottom: 1.1em;
+    }
+
+    .home {
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #0B3954;
+        background-color: #f0f0f0;
+        padding: 0.6em;
+        border-radius: 5px;
+    }
+
+    .home:hover {
+        font-weight: bolder;
+        padding: 0.75em;
+        transition: 0.5s;
+    }
+
+    main {
+        margin: 25px;
+    }
+
+    main p, main ul{
+        line-height: 1.5;
+    }
+
+    h2, h3 {
+        font-family: 'Libre Baskerville', serif;
+    }
+
+    main ul.colors {
+        list-style: none;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding-inline-start: 0;
+    }
+
+    main ul.colors li {
+        flex: 1 1 auto;
+        padding: 1em;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .color1 {
+        background-color: #0B3954;
+    }
+
+    .color2 {
+        background-color: #8797B2;
+    }
+
+    .color3 {
+        background-color: #F1FFE7;
+    }
+
+    .color4 {
+        background-color: #F49E4C;
+    }
+
+    .color5 {
+        background-color: #AB3428;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .logo {
+        float: none;
+        margin: 0 auto;
+    }*/
+
+}
