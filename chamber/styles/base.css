@@ -69,10 +69,22 @@
         padding: 15px;
     }
 
+    .spotlights {
+        display: block;
+    }
+
     .spotlights div {
         padding: 10px;
         padding-bottom: 120px;
         border: gray solid 1px;
+    }
+
+    .spotlight-3 {
+        display: none;
+    }
+
+    .join {
+        display: none;
     }
 
     footer .address-desc, footer .contact-information {

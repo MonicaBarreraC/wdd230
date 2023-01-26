@@ -1,5 +1,9 @@
 @media screen and (min-width: 32.5em){
 
+    main section, .join {
+        grid-column: 1/4;
+    }
+
     .news {
         grid-row: 2;
     }
@@ -7,10 +11,22 @@
     .spotlights {
         grid-row: 3;
         display: flex;
+        justify-content: space-around;
     }
 
     .join {
+        display: block;
         grid-row: 4;
+        background: #F9F9F9;
+        padding: 15px;
+    }
+
+    .event {
+        grid-column: 1/3;
+    }
+
+    .weather {
+        grid-column: 3/4;
     }
 
 }

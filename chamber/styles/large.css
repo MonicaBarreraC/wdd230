@@ -1,5 +1,44 @@
 @media screen and (min-width: 65em) {
 
-    /**/
+    main section {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-column: 1/4;
+    }
+
+    .event {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .weather {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .join {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .hero {
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+
+    .news {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    .spotlights {
+        grid-column: 3/4;
+        grid-row: 1/4;
+        display: block;
+        justify-content: space-around;
+    }
+
+    .spotlight-3 {
+        display: block;
+    }
     
 }
