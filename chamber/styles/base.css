@@ -56,23 +56,6 @@
         padding: 10px;
         margin-bottom: 0;
     }
-/*
-    .home {
-        display: inline-block;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #0B3954;
-        background-color: #f0f0f0;
-        padding: 0.6em;
-        border-radius: 5px;
-    }
-
-    .home:hover {
-        font-weight: bolder;
-        padding: 0.75em;
-        transition: 0.5s;
-    }
-*/
 
     main {
         display: grid;
@@ -88,6 +71,7 @@
 
     .spotlights div {
         padding: 10px;
+        padding-bottom: 120px;
         border: gray solid 1px;
     }
 
