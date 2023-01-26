@@ -75,14 +75,20 @@
 */
 
     main {
-        margin: 20px auto;
+        display: grid;
+        grid-auto-rows: minmax(150px, auto);
+        margin: 10px;
+        gap: 10px;
     }
 
     main section {
         background: #F9F9F9;
-        height: 150px;
-        margin: 10px;
         padding: 15px;
+    }
+
+    .spotlights div {
+        padding: 10px;
+        border: gray solid 1px;
     }
 
     footer .address-desc, footer .contact-information {
@@ -98,18 +104,22 @@
         margin: 5px;
     }
 
-    .location a {
+    .location a, .home{
         color: #F9F9F9;
         font-weight: bold;
         text-decoration: none;
     }
 
-    .location a:hover {
+    .location a:hover, .home:hover {
         background-color: #F9F9F9;
         color: #0B3954;
         padding: 7px;
         border-radius: 5px;
         transition: 1s;
+    }
+
+    .page-details p:nth-child(3) {
+        margin-top: 15px;
     }
 
     .page-details > p{
