@@ -57,5 +57,9 @@
     .spotlight-3 {
         display: block;
     }
+
+    section.address {
+        margin: auto 80px;
+    }
     
 }
