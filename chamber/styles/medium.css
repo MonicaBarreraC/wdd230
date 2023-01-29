@@ -37,4 +37,16 @@
         grid-column: 3/4;
     }
 
+    .chamber-details {
+        display: flex;
+    }
+
+    .contact-information {
+        flex: auto;
+    }
+
+    .contact-information, .address {
+        align-self: center;
+    }
+
 }

@@ -1,5 +1,22 @@
 @media screen and (min-width: 65em) {
 
+    .banner {
+        justify-content: space-around;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
     main section {
         grid-template-columns: 1fr 2fr 1fr;
         grid-column: 1/4;

@@ -171,38 +171,4 @@
         font-size: 13px;
     }
 
-    
-
-    /*
-    nav ul {
-        list-style: none;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        padding-inline-start: 0;
-    }
-
-    nav ul li {
-        flex: 1 1 auto;
-        padding: 0.5em;
-    }
-
-    nav ul li a{
-        text-decoration: none;
-        font-weight: bold;
-        color: white;
-    }
-
-    .active {
-        border: none;
-        background-color: #8797B2;
-    }
-*/    
-
-/*
-    .logo {
-        float: none;
-        margin: 0 auto;
-    }*/
-
 }
