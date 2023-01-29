@@ -9,44 +9,87 @@
         text-align: center;
         max-width: 100%;
     }
-/*
-    nav ul {
-        list-style: none;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        padding-inline-start: 0;
-    }
 
-    nav ul li {
-        flex: 1 1 auto;
-        padding: 0.5em;
-    }
-
-    nav ul li a{
-        text-decoration: none;
-        font-weight: bold;
-        color: white;
-    }
-
-    .active {
-        border: none;
-        background-color: #8797B2;
-    }
-*/    
-    .banner {
+    header {
         align-items: center;
     }
-    
-    .banner, footer {
+
+    header, footer {
         background-color: #0B3954;
         color: #F9F9F9;
         padding: 1em;
     }
 
+    .banner, .social-media{
+        display: flex;
+    }
+
+    .logo-header {
+        max-width: 70px;
+    }
+
     .title-banner {
         font-family: 'Libre Baskerville', serif;
-        margin-bottom: 1.1em;
+        font-size: 16px;
+        text-align: left;
+        align-self: center;
+        margin: 5px;
+    }
+
+    .title-desc {
+        font-size: 13px;
+    }
+
+    .social-media a {
+        align-self: center;
+    }
+
+    .social-media img {
+        max-width: 20px;
+        margin: 6px;
+    }
+
+    .navigation {
+        list-style: none;
+        padding-inline-start: 0;
+        margin: 0;
+    }
+
+    .navigation li:first-child {
+        display: block;
+        position: absolute;
+        top: 32px;
+        right: 18px
+    }
+
+    .navigation li {
+        display: none;
+    }
+    
+    .navigation a {
+        text-decoration: none;
+        display: block;
+        padding: 12px;
+        text-align: center;
+        color: white;
+        font-weight: 700;
+    }
+
+    #menu::before {
+        content: "≡";
+        font-size: 30px;
+    }
+
+    .responsive li {
+        display: block;
+    }
+
+    .responsive #menu::before {
+        content: "⛌";
+        font-size: 20px;
+        position: absolute;
+        top: 6px;
+        right: 2px;
     }
 
     #current-date {
@@ -91,8 +134,13 @@
         font-size: 15px;
     }
 
+    .logo-footer {
+        max-width: 160px;
+    }
+
     .title {
         font-family: 'Libre Baskerville', serif;
+        font-weight: bold;
         margin-bottom: 5px;
     }
 
@@ -122,13 +170,36 @@
         margin: 5px;
         font-size: 13px;
     }
-/*
-    img {
-        max-width: 100%;
-        display: block;
-        margin: 20px auto;
+
+    
+
+    /*
+    nav ul {
+        list-style: none;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding-inline-start: 0;
     }
 
+    nav ul li {
+        flex: 1 1 auto;
+        padding: 0.5em;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+    }
+
+    .active {
+        border: none;
+        background-color: #8797B2;
+    }
+*/    
+
+/*
     .logo {
         float: none;
         margin: 0 auto;

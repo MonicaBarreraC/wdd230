@@ -7,3 +7,10 @@ document.querySelector("#copyright-year").textContent = `© ${year}`;
 
 // Last Update
 document.querySelector("#last-update").textContent = `Last Updated: ${document.lastModified}`
+
+// Hamburger Menu
+const mainnav = document.querySelector('.navigation');
+const hambutton = document.querySelector("#menu");
+
+//  Toggle Part
+hambutton.addEventListener("click", () => {mainnav.classList.toggle("responsive")}, false);
