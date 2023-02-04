@@ -49,6 +49,12 @@
         margin: 6px;
     }
 
+    .social-media a:hover {
+        /*background: #8797B2;*/
+        background: rgba(135, 151, 178, 30%);
+        border-radius: 25px;
+    }
+
     .navigation {
         list-style: none;
         padding-inline-start: 0;
