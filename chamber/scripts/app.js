@@ -9,8 +9,8 @@ document.querySelector("#copyright-year").textContent = `© ${year}`;
 document.querySelector("#last-update").textContent = `Last Updated: ${document.lastModified}`
 
 // Hamburger Menu
-const mainnav = document.querySelector('.navigation');
-const hambutton = document.querySelector("#menu");
+const mainNav = document.querySelector('.navigation');
+const hamButton = document.querySelector("#menu");
 
 //  Toggle Part
-hambutton.addEventListener("click", () => {mainnav.classList.toggle("responsive")}, false);
+hamButton.addEventListener("click", () => {mainNav.classList.toggle("responsive")}, false);
