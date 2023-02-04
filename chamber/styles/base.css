@@ -65,6 +65,11 @@
     .navigation li {
         display: none;
     }
+
+    .navigation li:hover {
+        border: none;
+        background-color: #8797B2;
+    }
     
     .navigation a {
         text-decoration: none;

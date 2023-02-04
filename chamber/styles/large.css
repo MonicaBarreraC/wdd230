@@ -17,6 +17,12 @@
         flex: 1 1 auto;
     }
 
+    .navigation li:hover {
+        border: white;
+        border-bottom: 2px solid white;
+        background: none;
+    }
+
     main section {
         grid-template-columns: 1fr 2fr 1fr;
         grid-column: 1/4;
