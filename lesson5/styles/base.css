@@ -59,6 +59,31 @@ li {
 	justify-content: space-between;
 }
 
+footer {
+	font-family: "Montserrat", Arial, sans-serif;
+	background-color: #0B3954;
+	color: #F9F9F9;
+	border-radius: 5px;
+	padding: 1em;
+	width: 100%;
+    position: fixed;
+    bottom: 1px;
+	text-align: center;
+	font-size: 13px;
+    line-height: 1.5;
+}
+
+.home {
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #0B3954;
+	background-color: #f0f0f0;
+	padding: 0.4em;
+	border-radius: 5px;
+	margin-top: 3px;
+}
+
 @media only screen and (min-width: 32.5em) {
 	h1 {
 		font-size: 2rem;

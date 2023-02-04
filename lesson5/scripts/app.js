@@ -35,3 +35,12 @@ addBtn.addEventListener("click", function(){
 
 // Focus Input
 document.getElementById("favchap").focus();
+
+// -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+
+// Get Year
+const year = new Date().getFullYear();
+document.querySelector("#copyright-year").textContent = `© ${year}`;
+
+// Last Update
+document.querySelector("#last-update").textContent = `Last Updated: ${document.lastModified}`
