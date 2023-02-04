@@ -43,15 +43,22 @@ h2{
 
 .lessons-list li {
     line-height: 1.5;
+    font-weight: 500;
 }
 
 .lessons-list li a {
     font-weight: bold;
+    color: #0B3954;
+    text-decoration: none;
 }
 
 .lessons-list li a:hover {
     color: #58A4B0;
     text-decoration: none;
+}
+
+.weeks {
+    font-family: "Roboto Mono", sans-serif;
 }
 
 /* TEMPORAL PAGE */
