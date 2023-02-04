@@ -9,7 +9,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	font-family: Acme, Arial, sans-serif;
+	font-family: "Acme", Arial, sans-serif;
 }
 
 h1 {
@@ -28,6 +28,7 @@ main {
 input,
 button {
 	padding: 0.5rem;
+    font-family: "Montserrat", Arial, sans-serif;
 }
 
 button {
