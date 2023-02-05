@@ -4,6 +4,10 @@
         justify-content: space-around;
     }
 
+    .social-media {
+        margin-right: 0;
+    }
+
     .navigation {
         display: flex;
     }

@@ -60,6 +60,10 @@
         font-size: 13px;
     }
 
+    .social-media {
+        margin-right: 22px;
+    }
+
     .social-media a {
         align-self: center;
     }
@@ -83,9 +87,12 @@
 
     .navigation li:first-child {
         display: block;
-        position: absolute;
+        position: fixed;
+        top: 48px;
+        right: 10px;
+        /*position: absolute;
         top: 32px;
-        right: 18px
+        right: 18px*/
     }
 
     .navigation li {
