@@ -20,6 +20,26 @@
         padding: 1em;
     }
 
+    .hidden {
+        display: none;
+    }
+
+    #banner-news {
+        background-color: #F49E4C;
+        padding: 1em;
+        margin: -1em;
+        color: #021621;
+        font-weight: bold;
+    }
+
+    #banner-news p {
+        margin: 0;
+    }
+
+    .banner {
+        padding-top: 1em;
+    }
+
     .banner, .social-media{
         display: flex;
     }
