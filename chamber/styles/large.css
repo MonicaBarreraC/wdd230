@@ -1,15 +1,30 @@
 @media screen and (min-width: 65em) {
 
-    .banner {
-        justify-content: space-around;
+    /* -  -  HEADER  -  - */
+
+    .header-grid {
+        display: grid;
+        grid-template-columns: 10%, 20%, auto;
     }
 
-    .social-media {
-        margin-right: 0;
+    .logo-header {
+        grid-column: 1/2;
+        margin: 0 auto;
+    }
+
+    .title-chamber {
+        grid-column: 2/3;
+        align-self: center;
+    }
+
+    nav {
+        grid-column: 3/4;
+        align-items: center;
     }
 
     .navigation {
         display: flex;
+        align-items: center;
     }
 
     .navigation li:first-child {
@@ -27,9 +42,11 @@
         background: none;
     }
 
-    main section {
+    /* -  -  MAIN  -  - */
+
+    main {
+        display: grid;
         grid-template-columns: 1fr 2fr 1fr;
-        grid-column: 1/4;
     }
 
     .event {
@@ -67,6 +84,8 @@
     .spotlight-3 {
         display: block;
     }
+
+    /* -  -  FOOTER  -  - */
 
     section.address {
         margin: auto 80px;
