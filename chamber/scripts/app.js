@@ -4,13 +4,11 @@ document.querySelector("#current-date").textContent = `${new Date().toLocaleDate
 // Get Day
 const day = new Date().getDay();
 /// Mondays and Tuesdays
-if (day == 1 || day == 2 || day == 6){
-    console.log(day);
+if (day == 1 || day == 2){
     document.querySelector("#banner-news").removeAttribute("class");
 }
 /// Rest of the days
 else {
-    console.log("Nope");
     document.querySelector("#banner-news").setAttribute("class", "hidden");
 }
 
