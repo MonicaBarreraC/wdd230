@@ -64,10 +64,9 @@ footer {
 	background-color: #0B3954;
 	color: #F9F9F9;
 	border-radius: 5px;
-	padding: 1em;
+	padding: 1em 0;
 	width: 100%;
-    position: fixed;
-    bottom: 1px;
+	margin-top: auto;
 	text-align: center;
 	font-size: 13px;
     line-height: 1.5;

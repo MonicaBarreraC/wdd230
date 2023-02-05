@@ -26,18 +26,14 @@
 
     #banner-news {
         background-color: #F49E4C;
-        padding: 1em;
-        margin: -1em;
-        color: #021621;
+        text-align: center;
         font-weight: bold;
+        color: #021621;
+        padding: 1em;        
     }
 
     #banner-news p {
         margin: 0;
-    }
-
-    .banner {
-        padding-top: 1em;
     }
 
     .banner, .social-media{
