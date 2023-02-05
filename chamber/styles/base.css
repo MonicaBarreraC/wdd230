@@ -4,20 +4,19 @@
         font-family: 'Montserrat', sans-serif;
         margin: 0 auto;
     }
-    
-    header, footer{
-        text-align: center;
-        max-width: 100%;
-    }
+
+    /* -  -  HEADER  -  - */
 
     header {
         align-items: center;
     }
-
-    header, footer {
+    
+    header, footer{
         background-color: #0B3954;
         color: #F9F9F9;
         padding: 1em;
+        text-align: center;
+        max-width: 100%;
     }
 
     .hidden {
@@ -130,9 +129,11 @@
         margin-bottom: 0;
     }
 
+    /* -  -  MAIN  -  - */
+
     main {
         display: grid;
-        grid-auto-rows: minmax(150px, auto);
+        grid-auto-rows: minmax(auto, auto);
         margin: 10px;
         gap: 10px;
     }
@@ -142,13 +143,35 @@
         padding: 15px;
     }
 
+    .hero {
+        min-height: 150px;
+    }
+
+    .event, .weather, .news, .spotlights div {
+        text-align: center;
+    }
+
+    .weather-icon-temp{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    .weather-icon {
+        font-size: 90px;
+    }
+
+    .weather-temp {
+        font-size: 50px;
+    }
+
     .spotlights {
         display: block;
     }
 
     .spotlights div {
         padding: 10px;
-        padding-bottom: 120px;
         border: gray solid 1px;
     }
 
@@ -159,6 +182,8 @@
     .join {
         display: none;
     }
+
+    /* -  -  FOOTER  -  - */
 
     footer .address-desc, footer .contact-information {
         font-size: 15px;
