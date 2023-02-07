@@ -191,6 +191,12 @@
         border-radius: 25px;
     }
 
+    .join-hero-button a:hover {
+        background-color: #AB3428;
+        color: white;
+        transition: 1.5s;
+    }
+
     .event, .weather, .news, .spotlights div, .join {
         text-align: center;
     }

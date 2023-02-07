@@ -39,6 +39,12 @@
         padding-bottom: 1em;
     }
 
+    .join-join-button a:hover {
+        background-color: #AB3428;
+        color: white;
+        transition: 1.5s;
+    }
+
     .event {
         grid-column: 1/3;
     }
