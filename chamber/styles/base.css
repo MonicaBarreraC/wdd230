@@ -5,6 +5,10 @@
         margin: 0 auto;
     }
 
+    h1, h2, h3, h4 {
+        font-family: 'Libre Baskerville', serif;
+    }
+
     /* -  -  HEADER  -  - */
     
     header, footer{
@@ -157,6 +161,16 @@
         padding: 15px;
     }
 
+    main section div a {
+        text-decoration: none;
+        font-weight: bold;
+        color:#F49E4C;
+    }
+
+    main section div a:hover {
+        color:#AB3428;
+    }
+
     .hero {
         min-height: 150px;
     }
@@ -178,6 +192,10 @@
 
     .weather-temp {
         font-size: 40px;
+    }
+
+    .icon-emoji {
+        font-size: 70px;
     }
 
     .spotlights {
