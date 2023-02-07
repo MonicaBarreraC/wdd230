@@ -52,6 +52,11 @@
         grid-template-columns: 1fr 2fr 1fr;
     }
 
+    .join-hero-button {
+        top: 36em;
+        left: 1.5em;
+    }
+
     .event {
         grid-column: 1/2;
         grid-row: 1/2;

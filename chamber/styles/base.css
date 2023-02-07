@@ -177,7 +177,21 @@
         min-height: 150px;
     }
 
-    .event, .weather, .news, .spotlights div {
+    .join-hero-button {
+        display: inline-block;
+        position: relative;
+        top: 6.5em;
+        left: 0.5em;
+    }
+
+    .join-hero-button a {
+        background-color: #F49E4C;
+        color: white;
+        padding: 1em 1.5em;
+        border-radius: 25px;
+    }
+
+    .event, .weather, .news, .spotlights div, .join {
         text-align: center;
     }
 
