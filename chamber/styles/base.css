@@ -105,6 +105,8 @@
     #menu::before {
         content: "≡";
         font-size: 30px;
+        top: -2px;
+        margin: 5px;
     }
 
     .responsive li {
