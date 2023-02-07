@@ -6,16 +6,13 @@
     }
 
     /* -  -  HEADER  -  - */
-
-    header {
-        align-items: center;
-    }
     
     header, footer{
         background-color: #0B3954;
         color: #F9F9F9;
-        padding: 1em;
+        padding: 10px;
         text-align: center;
+        align-items: center;
         max-width: 100%;
     }
 
@@ -35,15 +32,22 @@
         margin: 0;
     }
 
-    .banner, .social-media{
-        display: flex;
+    .header-grid{
+        display: grid;
+        grid-template-columns: 1fr 3.5fr 1.5fr;
     }
 
     .logo-header {
+        grid-column: 1/2;
         max-width: 70px;
     }
 
-    .title-banner {
+    .title-chamber {
+        grid-column: 2/3;
+        align-self: center;
+    }
+
+    .title-name {
         font-family: 'Libre Baskerville', serif;
         font-size: 16px;
         text-align: left;
@@ -55,22 +59,11 @@
         font-size: 13px;
     }
 
-    .social-media {
-        margin-right: 22px;
-    }
-
-    .social-media a {
+    nav {
+        grid-column: 3/4;
+        display: flex;
+        flex-direction: row-reverse;
         align-self: center;
-    }
-
-    .social-media img {
-        max-width: 20px;
-        margin: 6px;
-    }
-
-    .social-media a:hover {
-        background: rgba(135, 151, 178, 30%);
-        border-radius: 25px;
     }
 
     .navigation {
@@ -81,9 +74,10 @@
 
     .navigation li:first-child {
         display: block;
-        position: fixed;
-        top: 48px;
-        right: 10px;
+    }
+
+    .navigation li:first-child a{
+        padding: 0;
     }
 
     .navigation li {
@@ -116,9 +110,29 @@
     .responsive #menu::before {
         content: "⛌";
         font-size: 20px;
-        position: absolute;
-        top: 6px;
-        right: 2px;
+    }
+    
+    .social-media {
+        display: flex;
+    }
+
+    .social-media a {
+        align-self: center;
+    }
+
+    .social-media img {
+        max-width: 20px;
+        margin: 6px;
+    }
+
+    .social-media a:hover {
+        background: rgba(135, 151, 178, 30%);
+        border-radius: 25px;
+    }
+
+    .date-banner {
+        grid-row: 2/3;
+        grid-column: 1/4;
     }
 
     #current-date {

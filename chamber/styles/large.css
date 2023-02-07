@@ -20,6 +20,8 @@
     nav {
         grid-column: 3/4;
         align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .navigation {
@@ -34,6 +36,7 @@
     .navigation li {
         display: block;
         flex: 1 1 auto;
+        margin: 0 1em;
     }
 
     .navigation li:hover {
