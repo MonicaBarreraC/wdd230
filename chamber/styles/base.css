@@ -78,6 +78,8 @@
 
     .navigation li:first-child {
         display: block;
+        position: relative;
+        bottom: 2px;
     }
 
     .navigation li:first-child a{
