@@ -18,6 +18,11 @@
         justify-content: space-around;
     }
 
+    .spotlights div {
+        margin: 0 auto;
+        width: 45%;
+    }
+
     .join {
         display: block;
         grid-row: 4;

@@ -229,6 +229,7 @@
     .spotlights div {
         padding: 10px;
         border: gray solid 1px;
+        margin-bottom: 10px;
     }
 
     .spotlight-3 {

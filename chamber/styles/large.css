@@ -89,8 +89,14 @@
         justify-content: space-around;
     }
 
+    .spotlights div {
+        margin-bottom: 5px;
+        width: auto;
+    }
+
     .spotlight-3 {
         display: block;
+        margin-bottom: 0;
     }
 
     /* -  -  FOOTER  -  - */
