@@ -44,6 +44,7 @@
     .logo-header {
         grid-column: 1/2;
         max-width: 70px;
+        margin: 0 auto;
     }
 
     .title-chamber {
@@ -78,8 +79,6 @@
 
     .navigation li:first-child {
         display: block;
-        position: relative;
-        bottom: 2px;
     }
 
     .navigation li:first-child a{
@@ -107,7 +106,6 @@
     #menu::before {
         content: "≡";
         font-size: 30px;
-        top: -2px;
         margin: 5px;
     }
 
@@ -126,6 +124,7 @@
 
     .social-media a {
         align-self: center;
+        height: 32px;
     }
 
     .social-media img {
@@ -136,6 +135,7 @@
     .social-media a:hover {
         background: rgba(135, 151, 178, 30%);
         border-radius: 25px;
+        transition: 0.5s;
     }
 
     .date-banner {
