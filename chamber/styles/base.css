@@ -176,7 +176,11 @@
     }
 
     .hero {
-        min-height: 150px;
+        padding: 0;
+    }
+
+    .hero picture img {
+        width: 100%;
     }
 
     .join-hero-button {
