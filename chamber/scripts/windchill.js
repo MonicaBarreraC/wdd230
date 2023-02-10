@@ -26,20 +26,18 @@ if (speedUnits == "km/h") {
 // Check if they meet spacifiaction limits
 // <=50°F and >3.0mph
 if (t <= 50 && s > 3.0){
-    console.log("Meet Requirements");
     f = 35.74 + (0.6215 * t) - (35.75 * Math.pow(s, 0.16)) + (0.4275 * t * Math.pow(s, 0.16));
     f = Math.round(f * 10)/10;
 }
 
 // Not Applicable
 else {
-    console.log("Not Applicable");
     f = "N/A";
 }
 
-console.log(f);
-
 // Set Values
+document.querySelector("#wind-chill").textContent = f;
+
 // Change to °F and mph -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
 /*// Note: Uncomment this and add a button later to change C -> F and reverse
 t = Math.round(t);
@@ -50,4 +48,4 @@ document.querySelector("#degrees").textContent = degrees;
 document.querySelector("#speed-units").textContent = speedUnits;
 // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
 
-document.querySelector("#wind-chill").textContent = f;
+
