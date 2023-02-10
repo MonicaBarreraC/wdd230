@@ -22,7 +22,7 @@ document.querySelector("#last-update").textContent = `Last Updated: ${document.l
 // -  -  -  -  -  -  M E N U -  -  -  -  -  - 
 
 // Hamburger Menu
-const mainNav = document.querySelector('.navigation');
+const mainNav = document.querySelector(".navigation");
 const hamButton = document.querySelector("#menu");
 
 //  Toggle Part
