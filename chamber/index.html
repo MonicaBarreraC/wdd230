@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="styles/large.css">
         <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap" rel="stylesheet">
         <script defer src="scripts/app.js"></script>
+        <script defer src="scripts/windchill.js"></script>
 
     </head>
 
@@ -101,9 +102,9 @@
 
                     <h3>Weather</h3>
                     <p class="weather-icon-temp"><span class="weather-icon">⛅</span> <span class="weather-temp">33°C</span></p>
-                    <p>Partly Cloudy</p>
-                    <p>Wind Speed: 2.5km/h</p>
-                    <p>Wind Chill: N/A</p>
+                    <p id="weather-sky">Partly Cloudy</p>
+                    <p>Wind Speed: <span id="wind-speed">2.5</span>km/h</p>
+                    <p>Wind Chill: <span id="wind-chill">N/A</span></p>
 
                 </div>
 

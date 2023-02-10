@@ -19,7 +19,7 @@ document.querySelector("#copyright-year").textContent = `© ${year}`;
 // Last Update
 document.querySelector("#last-update").textContent = `Last Updated: ${document.lastModified}`
 
-// -  -  -  -  -  -  -  -  -  -  
+// -  -  -  -  -  -  M E N U -  -  -  -  -  - 
 
 // Hamburger Menu
 const mainNav = document.querySelector('.navigation');
