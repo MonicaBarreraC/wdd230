@@ -1,17 +1,9 @@
 // Get values
-/*let t = document.querySelector("#weather-temp").textContent;
-let s = document.querySelector("#wind-speed").textContent;*/
-let t = 10;
-let s = 5;
-let f = 0;
+let t = document.querySelector("#weather-temp").textContent;
+let s = document.querySelector("#wind-speed").textContent;
+let f = document.querySelector("#wind-chill").textContent;;
 let degrees = document.querySelector("#degrees").textContent;
 let speedUnits = document.querySelector("#speed-units").textContent;
-
-console.log("t = " + t);
-console.log("s = " + s);
-console.log("°" + degrees);
-console.log("Units: " + speedUnits);
-console.log("");
 
 // Convert °C to °F
 // Formula: (0°C * 9/5) + 32 = 32°F
@@ -31,17 +23,12 @@ if (speedUnits == "km/h") {
 
 }
 
-console.log("t = " + t);
-console.log("s = " + s);
-console.log("°" + degrees);
-console.log("Units: " + speedUnits);
-console.log("");
-
 // Check if they meet spacifiaction limits
 // <=50°F and >3.0mph
 if (t <= 50 && s > 3.0){
     console.log("Meet Requirements");
     f = 35.74 + (0.6215 * t) - (35.75 * Math.pow(s, 0.16)) + (0.4275 * t * Math.pow(s, 0.16));
+    f = Math.round(f * 10)/10;
 }
 
 // Not Applicable
@@ -51,4 +38,16 @@ else {
 }
 
 console.log(f);
-console.log(Math.round(f * 10)/10);
+
+// Set Values
+// Change to °F and mph -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+/*// Note: Uncomment this and add a button later to change C -> F and reverse
+t = Math.round(t);
+document.querySelector("#weather-temp").textContent = t;
+s = Math.round(s * 10)/10;
+document.querySelector("#wind-speed").textContent = s;
+document.querySelector("#degrees").textContent = degrees;
+document.querySelector("#speed-units").textContent = speedUnits;
+// -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - */
+
+document.querySelector("#wind-chill").textContent = f;
