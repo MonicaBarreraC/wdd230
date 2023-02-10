@@ -179,8 +179,8 @@
         padding: 0;
     }
 
-    .hero picture img {
-        /*width: 100%;*/
+    .hero-img {
+        width: 100%;
     }
 
     .join-hero-button {
