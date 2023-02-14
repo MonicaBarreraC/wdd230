@@ -21,7 +21,7 @@
         grid-column: 3/4;
         align-items: center;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-end;
     }
 
     .navigation {
@@ -43,6 +43,10 @@
         border: white;
         border-bottom: 2px solid white;
         background: none;
+    }
+
+    li.social-media:hover {
+        border: none;
     }
 
     /* -  -  MAIN  -  - */

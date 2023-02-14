@@ -38,7 +38,7 @@
 
     .header-grid{
         display: grid;
-        grid-template-columns: 1fr 3.5fr 1.5fr;
+        grid-template-columns: 1fr 5fr 1fr;
     }
 
     .logo-header {
@@ -57,7 +57,8 @@
         font-size: 16px;
         text-align: left;
         align-self: center;
-        margin: 5px;
+        padding: 5px;
+        margin-left: 1em;
     }
 
     .title-desc {
@@ -67,8 +68,8 @@
     nav {
         grid-column: 3/4;
         display: flex;
-        flex-direction: row-reverse;
         align-self: center;
+        justify-content: flex-end;
     }
 
     .navigation {
@@ -79,6 +80,10 @@
 
     .navigation li:first-child {
         display: block;
+    }
+
+    .navigation li:first-child:hover {
+        background: rgba(135, 151, 178, 30%);
     }
 
     .navigation li:first-child a{
@@ -114,12 +119,8 @@
     }
 
     .responsive #menu::before {
-        content: "⛌";
+        content: "×";/*⛌*/
         font-size: 20px;
-    }
-    
-    .social-media {
-        display: flex;
     }
 
     .social-media a {

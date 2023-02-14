@@ -1,8 +1,5 @@
 @media screen and (min-width: 32.5em){
 
-    .social-media {
-        margin-left: 100px;
-    }
 
     main section, .join {
         grid-column: 1/4;
@@ -29,6 +26,11 @@
         background: #F9F9F9;
         padding: 15px;
         min-height: 150px;
+    }
+
+    .join-hero-button {
+        top: 3em;
+        left: 0.5em;
     }
 
     .join-join-button a {
