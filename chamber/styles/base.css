@@ -69,7 +69,8 @@
         grid-column: 3/4;
         display: flex;
         align-self: center;
-        justify-content: flex-end;
+        justify-content: space-evenly;
+        flex-direction: column;
     }
 
     .navigation {
@@ -120,12 +121,13 @@
 
     .responsive #menu::before {
         content: "×";/*⛌*/
-        font-size: 20px;
+        font-size: 36px;
     }
 
     .social-media a {
         align-self: center;
         height: 32px;
+        padding: 5px;
     }
 
     .social-media img {
