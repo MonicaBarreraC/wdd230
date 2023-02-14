@@ -89,13 +89,14 @@
     .spotlights {
         grid-column: 3/4;
         grid-row: 1/4;
-        display: block;
+        display: flex;
+        flex-direction: column;
         justify-content: space-around;
     }
 
     .spotlights div {
         margin-bottom: 5px;
-        width: auto;
+        width: 92%;
     }
 
     .spotlight-3 {

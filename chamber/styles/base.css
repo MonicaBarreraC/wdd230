@@ -49,7 +49,7 @@
 
     .title-chamber {
         grid-column: 2/3;
-        align-self: center;
+        align-self: start;
     }
 
     .title-name {
@@ -164,6 +164,8 @@
     main section {
         background: #F9F9F9;
         padding: 15px;
+        display: flex;
+        align-items: center;
     }
 
     main section div a {
@@ -178,6 +180,7 @@
 
     .hero {
         padding: 0;
+        display: block;
     }
 
     .hero-img {
@@ -206,6 +209,7 @@
 
     .event, .weather, .news, .spotlights div, .join {
         text-align: center;
+        justify-content: center;
     }
 
     .weather-icon-temp{
