@@ -30,7 +30,7 @@ const imgOptions = {
     // threshold should be 0
     threshold: 0,
     // needs to be specified in pixles or percent
-    rootMargin: "0px 0px -50px 0px" 
+    rootMargin: "0px 0px 50px 0px" 
 };
 
 // Create Observer (this will observe the entries and itself)
