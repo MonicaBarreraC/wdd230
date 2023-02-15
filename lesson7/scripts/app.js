@@ -9,7 +9,6 @@ document.querySelector("#last-update").textContent = `Last Updated: ${document.l
 
 // Get all elements that has attribute [data-src]
 const images = document.querySelectorAll("[data-src]");
-console.log(images);
 
 // Function to load images
 function preloadImage(img) {
@@ -37,24 +36,13 @@ const imgOptions = {
 // Create Observer (this will observe the entries and itself)
 const imgObserver = new IntersectionObserver((entries, imgObserver) => {
 
-    /*console.log("Observer:");
-    console.log(imgObserver);*/
     entries.forEach(entry => {
 
-        /*console.log("Entry:");
-        console.log(entry);*/
-
-        console.log(entry.isIntersecting);
-        /*let intersecting = entry.isIntersecting*/
-
         if (entry.isIntersecting == false){
-            console.log("Not Intersecting");
             return;
         }
         // If is intersecting we are loading the image and stop observing it
         else {
-            console.log("Is Intersecting");
-            console.log("entry");
             preloadImage(entry.target);
             imgObserver.unobserve(entry.target);
         }
