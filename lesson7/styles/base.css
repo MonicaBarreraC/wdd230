@@ -27,6 +27,12 @@ header, footer {
     line-height: 1.5;
 }
 
+.images-grid {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .home {
 	display: inline-block;
 	text-transform: uppercase;
