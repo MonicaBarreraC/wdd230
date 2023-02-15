@@ -7,16 +7,6 @@ body {
 	margin: 0;
 }
 
-main {
-	max-width: 940px;
-	margin: 0 auto;
-}
-
-h1 {
-	font-size: 1.5rem;
-	font-family: 'Libre Baskerville', serif;
-}
-
 header, footer {
 	background-color: #0B3954;
 	color: #F9F9F9;
@@ -27,15 +17,9 @@ header, footer {
     line-height: 1.5;
 }
 
-.images-grid {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 1em;
-}
-
-picture {
-	padding: 5px;
+h1 {
+	font-size: 1.5rem;
+	font-family: 'Libre Baskerville', serif;
 }
 
 .home {
@@ -48,3 +32,20 @@ picture {
 	border-radius: 5px;
 	margin-top: 3px;
 }
+
+main {
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+.images-grid {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+picture {
+	padding: 5px;
+}
+
+
