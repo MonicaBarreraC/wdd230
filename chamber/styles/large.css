@@ -24,6 +24,12 @@
         justify-content: flex-end;
     }
 
+    .active {
+        border: white;
+        border-bottom: 2px solid white;
+        background: none;
+    }
+
     .navigation {
         display: flex;
         align-items: center;

@@ -73,6 +73,11 @@
         flex-direction: column;
     }
 
+    .active {
+        border: none;
+        background-color: #8797B2;
+    }
+
     .navigation {
         list-style: none;
         padding-inline-start: 0;
