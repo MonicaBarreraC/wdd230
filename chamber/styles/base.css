@@ -296,4 +296,16 @@
         font-size: 13px;
     }
 
+    /*  -  -  -  -  -  D I S C O V E R  -  -  -  -  -  */
+
+    .discover-main {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1em;
+    }
+
+    .discover-main p {
+        width: 940px;
+    }
+
 }
