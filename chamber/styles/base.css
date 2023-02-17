@@ -300,12 +300,25 @@
 
     .discover-main {
         display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
         justify-content: space-evenly;
         margin: 1em;
+        background-color: #F9F9F9;
     }
 
     .discover-main p {
         width: 940px;
     }
+
+    .discover-main picture img {
+        max-width: 500px;
+    }
+
+    .discover-main picture img:hover {
+        filter: drop-shadow(2px 4px 10px #0B3954);
+    }
+    
 
 }
