@@ -53,7 +53,7 @@ function daysToFestival(month, date, selector){
 }
 
 // May 5 -> Virgen de la concepción
-const virgen = daysToFestival(5, 5, "#virgen-festival");
+const virgen = daysToFestival(5, 8, "#virgen-festival");
 
 // October 1 -> St. Francisco de Asís
-const francisco = daysToFestival(10, 1, "#st-francisco-festival");
+const francisco = daysToFestival(10, 4, "#st-francisco-festival");

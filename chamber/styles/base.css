@@ -304,22 +304,37 @@
     /*  -  -  -  -  -  D I S C O V E R  -  -  -  -  -  */
 
     .discover-main {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 100%;
         text-align: center;
-        align-items: center;
-        justify-content: space-evenly;
+        line-height: 1.5;
         margin: 1em;
+        padding-top: 1em;
         background-color: #F9F9F9;
     }
 
-    .discover-main p {
-        max-width: 940px;
-        margin: 1em;
+    .demographic-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    .discover-description {
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    .discover-main div img {
+        max-width: 100%;
     }
 
     .festival {
         font-weight: bold;
+        max-width: 420px;
+        margin: 0 auto;
+        text-align: center;
     }
 
     .visits p{
