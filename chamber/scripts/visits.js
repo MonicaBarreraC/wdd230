@@ -16,7 +16,7 @@ let daysAgo = (thisVisit - lastVisit) / 84600000;
 console.log(daysAgo);
 
 // Set messages
-if (thisVisit - lastVisit == thisVisit){ // First time here -> 0
+if (lastVisit == 0){ // First time here -> 0
     visitMessage = `Welcome, this is your first time here!`;
 }
 else if (daysAgo < 1) { // Less than a day
