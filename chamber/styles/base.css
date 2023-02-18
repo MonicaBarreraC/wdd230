@@ -319,6 +319,12 @@
     .discover-main picture img:hover {
         filter: drop-shadow(2px 4px 10px #0B3954);
     }
+
+    .visits p{
+        background-color: #8797B2;
+        padding: 10px 0;
+        margin: 5px 0;
+    }
     
 
 }
