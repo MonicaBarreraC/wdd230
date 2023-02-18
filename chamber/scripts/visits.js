@@ -2,11 +2,9 @@
 
 // Not needed actually because I can just create a new variable and don't grab info from the HTML file
 let visitMessage = document.querySelector("#n-visits").textContent;
-//console.log(visitMessage);
 
 // Get number of visits from localStorage
 let nVisits = Number(window.localStorage.getItem("visits-ls")); /* Number() prevents "Undefined" or something like that */
-//console.log(nVisits);
 
 // First visit message
 if (nVisits == 0) {
@@ -59,5 +57,3 @@ const virgen = daysToFestival(5, 5, "#virgen-festival");
 
 // October 1 -> St. Francisco de Asís
 const francisco = daysToFestival(10, 1, "#st-francisco-festival");
-
-//const test = daysToFestival(2, 17, "#st-francisco-festival");
