@@ -320,6 +320,10 @@
         filter: drop-shadow(2px 4px 10px #0B3954);
     }
 
+    .festival {
+        font-weight: bold;
+    }
+
     .visits p{
         background-color: #8797B2;
         padding: 10px 0;
