@@ -74,20 +74,6 @@
 
     /*  -  -  -  -  -  D I S C O V E R  -  -  -  -  -  */
 
-    .discover-main {
-        display: grid;
-        grid-template-columns: 1fr 1.5fr;
-    }
-
-    .demographic-info {
-        grid-column: 1/2;
-        grid-row: 1/6;
-    }
-
-    .discover-main div {
-        grid-column: 2/3;
-    }
-
     .discover-main div img:hover {
         filter: drop-shadow(2px 4px 10px #0B3954);
     }

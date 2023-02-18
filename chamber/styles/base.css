@@ -313,6 +313,10 @@
         background-color: #F9F9F9;
     }
 
+    .discover-main div {
+        grid-column: 1/2;
+    }
+
     .demographic-info {
         display: flex;
         flex-direction: column;
@@ -320,7 +324,7 @@
         text-align: left;
     }
 
-    .discover-description {
+    .discover-main section {
         max-width: 500px;
         margin: 0 auto;
         text-align: left;
