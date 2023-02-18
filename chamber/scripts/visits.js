@@ -27,36 +27,37 @@ localStorage.setItem("visits-ls", nVisits);
 
 // -  -  -  -  F E S T I V A L S  -  -  -  -
 
-// Today
-const today = new Date();
-console.log("DAY: " + today.getDate()); /* getDate (1-31), getDay (0-6) */
-console.log("MONTH: " + today.getMonth()); /* From 0 to 11 */
-console.log("YEAR: " + today.getFullYear());
+// Days to Festival Function
+// month: (1-12), date: (1-31), selector: (i.e. = "#somehting", ".thing")
+function daysToFestival(month, date, selector){
+
+    const today = new Date();
+    const festival = new Date(today.getFullYear(), month - 1, date); // Subtract 1 because months are from 0 to 11
+
+    // Change to next year if the date has passed
+    if (today.getMonth() == (month - 1)  && today.getDate() > date) {
+        festival.setFullYear(festival.getFullYear() + 1);
+    }
+
+    // Days Left to Festival
+    let daysLeftFestival = (festival.getTime() - Date.now()) / 84600000; // 84600000 is the 
+    //daysLeftFestival = daysLeftFestival.toFixed(0); // Fix to 0 decimals
+    daysLeftFestival = Math.ceil(daysLeftFestival);
+
+    // Output
+    if (daysLeftFestival == 0) { 
+        document.querySelector(selector).textContent = `today.`;
+    } else if (daysLeftFestival == 1) { 
+        document.querySelector(selector).textContent = `tomorrow.`;
+    } else {
+        document.querySelector(selector).textContent = `in ${daysLeftFestival} days.`;
+    }
+}
 
 // May 5 -> Virgen de la concepción
-const virgen = new Date(today.getFullYear(), 4, 5); /* Subtract 1 to the month (0-11) */
-
-// Avoid negative numbers changing to next year if the date has passed
-if (today.getMonth() == 4 && today.getDate() > 5) {
-    virgen.setFullYear(virgen.getFullYear() + 1);
-}
-// Days Left to May 5
-let daysLeftVirgen = (virgen.getTime() - Date.now()) / 84600000; /* 84600000 */
-/// 0 Decimals
-daysLeftVirgen = daysLeftVirgen.toFixed(0);
-
-// Update HTML file
-// 0 days to festival
-if (daysLeftVirgen == 0) {
-    document.querySelector("#virgen-festival").textContent = `today.`;
-} else if (daysLeftVirgen == 1) {
-    document.querySelector("#virgen-festival").textContent = `tomorrow.`;
-} else {
-    document.querySelector("#virgen-festival").textContent = `in ${daysLeftVirgen} days.`;
-}
-
+const virgen = daysToFestival(5, 5, "#virgen-festival");
 
 // October 1 -> St. Francisco de Asís
-const francisco = new Date(today.getFullYear(), 9, 1);
+const francisco = daysToFestival(10, 1, "#st-francisco-festival");
 
-
+//const test = daysToFestival(2, 17, "#st-francisco-festival");
