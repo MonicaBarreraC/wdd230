@@ -14,14 +14,53 @@ if (nVisits == 0) {
 else {
     visitMessage = `Number of visits: ${nVisits + 1}`;
 }
-// Update message in HTML file
-document.querySelector("#n-visits").textContent = visitMessage;
 
 // Add 1 every visit
 nVisits ++;
 
 // Save changes in localStorage
 localStorage.setItem("visits-ls", nVisits);
+
+// -  -  -  -  0 0 0 0 0  -  -  -  -
+
+// Get last time visit
+let lastVisit = Number(window.localStorage.getItem("last-visit"));
+console.log(lastVisit);
+
+// Set current visit
+const thisVisit = Date.now();
+console.log(thisVisit);
+
+// # 1676732527559
+
+// Calculate days
+let daysAgo = (thisVisit - lastVisit) / 84600000;
+console.log(daysAgo);
+
+// Set messages
+if (daysAgo == thisVisit){ // First time here -> 0
+    visitMessage = `Welcome, this is your first time here!`;
+}
+else if (daysAgo < 1) { // Less than a day
+    visitMessage = `You've been here recently.`;
+}
+else {
+    // Round number
+    daysAgo = Math.floor(daysAgo);
+    if (daysAgo == 1){ // 1 day ago
+        visitMessage = `Your last visit was yesterday.`;
+    }
+    else { // Days ago
+        visitMessage = `Your last visit was ${daysAgo} days ago.`;
+    }
+}
+
+// Update message in HTML file
+document.querySelector("#n-visits").textContent = visitMessage;
+
+// Update last visit in localStorage
+window.localStorage.setItem("last-visit", thisVisit);
+
 
 // -  -  -  -  F E S T I V A L S  -  -  -  -
 
@@ -52,8 +91,8 @@ function daysToFestival(month, date, selector){
     }
 }
 
-// May 5 -> Virgen de la concepción
+// May 8 -> Virgen de la concepción
 const virgen = daysToFestival(5, 8, "#virgen-festival");
 
-// October 1 -> St. Francisco de Asís
+// October 4 -> St. Francisco de Asís
 const francisco = daysToFestival(10, 4, "#st-francisco-festival");
