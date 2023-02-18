@@ -309,15 +309,12 @@
     }
 
     .discover-main p {
-        width: 940px;
+        max-width: 940px;
+        margin: 1em;
     }
 
     .discover-main picture img {
         max-width: 500px;
-    }
-
-    .discover-main picture img:hover {
-        filter: drop-shadow(2px 4px 10px #0B3954);
     }
 
     .festival {

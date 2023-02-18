@@ -72,4 +72,10 @@
         align-self: center;
     }
 
+    /*  -  -  -  -  -  D I S C O V E R  -  -  -  -  -  */
+
+    .discover-main picture img:hover {
+        filter: drop-shadow(2px 4px 10px #0B3954);
+    }
+
 }
