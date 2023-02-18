@@ -192,6 +192,10 @@
 
     .hero-img {
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        top: -18px;
     }
 
     .join-hero-button {
@@ -199,6 +203,7 @@
         position: relative;
         top: 3em;
         left: 0.5em;
+        z-index: 1;
     }
 
     .join-hero-button a {
