@@ -11,8 +11,6 @@ console.log(lastVisit);
 const thisVisit = Date.now();
 console.log(thisVisit);
 
-// # 1676732527559
-
 // Calculate days
 let daysAgo = (thisVisit - lastVisit) / 84600000;
 console.log(daysAgo);
