@@ -1,27 +1,7 @@
 // -  -  -  -  L O C A L   S T O R A G E  -  -  -  -
 
-// Not needed actually because I can just create a new variable and don't grab info from the HTML file
-let visitMessage = document.querySelector("#n-visits").textContent;
-
-// Get number of visits from localStorage
-let nVisits = Number(window.localStorage.getItem("visits-ls")); /* Number() prevents "Undefined" or something like that */
-
-// First visit message
-if (nVisits == 0) {
-    visitMessage = `Welcome, this is your first visit!`;
-}
-// Next visits message
-else {
-    visitMessage = `Number of visits: ${nVisits + 1}`;
-}
-
-// Add 1 every visit
-nVisits ++;
-
-// Save changes in localStorage
-localStorage.setItem("visits-ls", nVisits);
-
-// -  -  -  -  0 0 0 0 0  -  -  -  -
+// Declare visitMessage
+let visitMessage = "";
 
 // Get last time visit
 let lastVisit = Number(window.localStorage.getItem("last-visit"));
@@ -38,7 +18,7 @@ let daysAgo = (thisVisit - lastVisit) / 84600000;
 console.log(daysAgo);
 
 // Set messages
-if (daysAgo == thisVisit){ // First time here -> 0
+if (thisVisit - lastVisit == thisVisit){ // First time here -> 0
     visitMessage = `Welcome, this is your first time here!`;
 }
 else if (daysAgo < 1) { // Less than a day
