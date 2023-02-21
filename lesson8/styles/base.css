@@ -7,7 +7,49 @@ body {
 	margin: 0;
 }
 
-header, footer {
+main {
+	max-width: 940px;
+	margin: 50px auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+thead, .empty{
+    font-size: 1.25rem;
+    background-color: #0B3954;
+    color: #F9F9F9;
+}
+
+thead tr:nth-child(2){
+    background-color: rgba(51, 100, 128, 0.5);
+}
+
+tbody tr td:first-child {
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even){
+    background-color: rgba(135, 151, 178, 0.5);
+}
+
+td, th {
+    text-align: center;
+    border: 1px solid #0B3954;
+    padding: 10px 15px;
+}
+
+caption {
+    caption-side: bottom;
+    padding: 0.5em;
+    font-size: 14px;
+}
+
+footer {
 	background-color: #0B3954;
 	color: #F9F9F9;
 	padding: 0.5em 0;
@@ -15,11 +57,6 @@ header, footer {
 	text-align: center;
 	font-size: 13px;
     line-height: 1.5;
-}
-
-h1 {
-	font-size: 1.5rem;
-	font-family: 'Libre Baskerville', serif;
 }
 
 .home {
@@ -33,7 +70,16 @@ h1 {
 	margin-top: 3px;
 }
 
-main {
-	max-width: 940px;
-	margin: 0 auto;
+@media screen and (max-width: 32.5em) {
+
+    table {
+        scale: 0.75;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    table {
+        scale: 0.6;
+    }
 }
