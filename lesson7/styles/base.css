@@ -48,4 +48,10 @@ picture {
 	padding: 5px;
 }
 
+picture img[data-src]{
+	filter: blur(1em);
+}
 
+picture img{
+	transition: 1s;
+}
