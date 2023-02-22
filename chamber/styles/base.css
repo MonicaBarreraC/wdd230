@@ -346,6 +346,14 @@
         padding: 10px 0;
         margin: 5px 0;
     }
+
+    /*  -  -  -  -  -  J O I N  -  -  -  -  -  */
+
+    .join-main {
+        display: block;
+        max-width: 940px;
+        margin: 60px auto;
+    }
     
 
 }
