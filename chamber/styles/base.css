@@ -352,7 +352,61 @@
     .join-main {
         display: block;
         max-width: 940px;
-        margin: 60px auto;
+        margin: 2em auto;
+    }
+
+    .join-main h2 {
+        text-align: center;
+    }
+
+    .join-main form fieldset {
+        margin: 1.5em 0;
+        border: 1px solid;
+        border-radius: 15px; /*5*/
+        padding: 15px 2%;
+    }
+
+    .join-main form legend {
+        padding: 0 5px;
+        margin: 0 10px;
+    }
+
+    .join-main label.top {
+        display: block;
+        padding-top: 1em;
+        font-size: 14px;
+    }
+
+    .join-main label.top input, .join-main label.top textarea {
+        display: block;
+        font-size: 16px;
+        padding: 12px;
+        border: gray solid 1px;
+        background-color: rgba(135, 151, 178, 0.1);
+        border-radius: 8px; /*3*/
+        width: 100%;
+        max-width: 20em;
+    }
+
+    .join-main label.sbs {
+        display: block;
+        padding: 8px;
+    }
+
+    .join-main input.submitBtn {
+        border: none;
+        background-color: #F49E4C;
+        color: white;
+        padding: 1em 1.5em;
+        border-radius: 25px;
+        width: 96%;
+        max-width: 300px;
+    }
+
+    .join-main input.submitBtn:hover {
+        background-color: #AB3428;
+        color: white;
+        transition: 1.5s;
     }
     
 

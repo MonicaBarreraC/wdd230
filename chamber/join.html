@@ -6,7 +6,7 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Join | Conkal Chamber</title>
+        <title>Join | Conkal Chamber of Commerce</title>
         <meta name="description" content="Join the Conkal Chamber of Commerce through a membership application form and enjoy the benefits we have for you.">
         <meta name="author" content="Mónica Barrera">
         <link rel="icon" href="favicon.ico">
@@ -67,9 +67,7 @@
 
         <main class="join-main">
 
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corrupti placeat facere, enim delectus eum nobis suscipit consectetur non iusto harum vel, aliquam optio quibusdam quasi inventore eos, impedit nostrum totam quia? Sint, praesentium beatae nulla magnam officiis modi nobis, excepturi laudantium error nihil, eligendi voluptates reiciendis magni? Similique soluta aperiam labore eaque quas doloremque inventore fuga porro maiores excepturi delectus reiciendis provident commodi, repudiandae quae ducimus dignissimos neque, quibusdam mollitia illo facilis! Vero dicta iste perferendis facere exercitationem aspernatur quibusdam, error temporibus. Ea incidunt repudiandae delectus quia quos nam sint inventore facere labore? Et minima possimus ipsa. Porro, maxime!
-            </p>
+            <h2>Join our Conkal Chamber</h2><!--change this-->
 
             <form method="get" action="thankyou.html">
 
@@ -77,16 +75,39 @@
 
                     <legend> Personal Information</legend>
 
-                    <label>First Name* <input type="text" name="fname" required></label>
-                    <label>Last Name* <input type="text" name="lname" required></label>
-                    <label>Business Position <input type="text" name="position"></label><!--only accepts alpha characters, hyphens, and spaces with a minimum of seven characters-->
-                    <label>Email* <input type="email" name="email" required placeholder="example@mail.com"></label>
-                    <label>Phone Number* <input type="tel" name="phone" required></label>
-                    <label>Business Name* <input type="text" name="business" required></label>
-                    <label>Membership Level</label>
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Email* <input type="email" name="email" required placeholder="example@mail.com"></label>
+                    <label class="top">Phone Number* <input type="tel" name="phone" required></label>
 
                 </fieldset>
-                
+
+                <fieldset>
+
+                    <legend> Business Information</legend>
+
+                    <label class="top">Business Name* <input type="text" name="business" required></label>
+                    <label class="top">Business Position <input type="text" name="position"></label><!--only accepts alpha characters, hyphens, and spaces with a minimum of seven characters-->
+                    <label class="top">Business Description <textarea name="description"></textarea></label>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Membership Level</legend>
+
+                    <label class="sbs"><input type="radio" name="membership" value="np"> NP Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                    
+                </fieldset>
+
+                <!--🥇 🥈 🥉 🏅 🎖-->
+
+                <input type="hidden" id="time-stamp" name="time-stamp" value="">
+
+                <input type="submit" value="Register My Business" class="submitBtn">
 
             </form>
 
