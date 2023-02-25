@@ -67,7 +67,7 @@
 
         <main class="join-main">
 
-            <h2>Join our Conkal Chamber</h2><!--change title-->
+            <h2>Join the Conkal Chamber of Commerce</h2>
 
             <div class="membership-desc">
                 <h4>🏅 NP Membership</h4>
@@ -111,7 +111,7 @@
                     <legend> Business Information</legend>
 
                     <label class="top">Business Name* <input type="text" name="business" required></label>
-                    <label class="top b-position">Business Position <input type="text" name="position" pattern="[A-Za-z]{7}" minlength="7"></label><!--only accepts alpha characters, hyphens, and spaces with a minimum of seven characters-->
+                    <label class="top b-position">Business Position <input type="text" name="position" pattern="[A-Za-z -]{7,}" title="Minimum of 7 characters"></label>
                     <label class="top">Business Description <textarea name="description"></textarea></label>
 
                 </fieldset>
