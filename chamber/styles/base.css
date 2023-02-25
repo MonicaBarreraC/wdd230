@@ -352,7 +352,7 @@
     .join-main {
         display: block;
         max-width: 940px;
-        margin: 2em auto;
+        margin: 2em 10px;
     }
 
     .join-main h2 {
@@ -408,6 +408,13 @@
         color: white;
         transition: 1.5s;
     }
+
+    form label.top input:required, form label.top.b-position input:invalid {
+        border-left: #AE0A25 solid 6px;
+    }
     
+    form label.top input:required:valid {
+        border-left: #24A810 solid 6px;
+    }    
 
 }

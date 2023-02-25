@@ -135,4 +135,10 @@
     .discover-main div {
         grid-column: 2/3;
     }
+
+    /*  -  -  -  -  -  J O I N  -  -  -  -  -  */
+
+    .join-main {
+        margin: 2em auto;
+    }
 }
