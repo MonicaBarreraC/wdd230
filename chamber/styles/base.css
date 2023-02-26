@@ -349,7 +349,7 @@
 
     /*  -  -  -  -  -  J O I N  -  -  -  -  -  */
 
-    .join-main {
+    .join-main, .thanks-main {
         display: block;
         max-width: 940px;
         margin: 2em 10px;
@@ -422,6 +422,17 @@
         border-radius: 15px; /*5*/
         padding: 15px 2%;
         background: rgba(135, 151, 178, 30%);
+    }
+
+    /*  -  -  -  -  -  T H A N K   Y O U  -  -  -  -  -  */
+
+    .thanks-main {
+        margin: 4em 1em;
+        text-align: center;
+    }
+
+    .emoji-medium {
+        font-size: 40px;
     }
 
 }

@@ -78,4 +78,14 @@
         filter: drop-shadow(2px 4px 10px #0B3954);
     }
 
+    /*  -  -  -  -  -  T H A N K   Y O U  -  -  -  -  -  */
+
+    .thanks-main {
+        margin: 6em auto;
+    }
+
+    .thanks-desc {
+        font-size: 20px;
+    }
+
 }
