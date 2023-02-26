@@ -384,7 +384,7 @@
         border: gray solid 1px;
         background-color: rgba(135, 151, 178, 0.1);
         border-radius: 8px; /*3*/
-        width: 100%;
+        width: 90%;
         max-width: 20em;
     }
 
