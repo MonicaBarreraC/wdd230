@@ -5,15 +5,12 @@ let visitMessage = "";
 
 // Get last time visit
 let lastVisit = Number(window.localStorage.getItem("last-visit"));
-console.log(lastVisit);
 
 // Set current visit
 const thisVisit = Date.now();
-console.log(thisVisit);
 
 // Calculate days
 let daysAgo = (thisVisit - lastVisit) / 84600000;
-console.log(daysAgo);
 
 // Set messages
 if (lastVisit == 0){ // First time here -> 0
