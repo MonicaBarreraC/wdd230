@@ -37,6 +37,13 @@ main {
 	margin: 0 auto;
 }
 
+.filter {
+	background-color: #8797B2;
+	padding: 5px;
+	margin: 0;
+	text-align: center;
+}
+
 .cards {
 	display: flex;
     flex-wrap: wrap;

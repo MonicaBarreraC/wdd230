@@ -67,7 +67,6 @@ const displayProphets = (prophets) => {
         deathAge = (deathDate - birthDate) / 31556926000;
         deathAge = Math.floor(deathAge);
 
-        //console.log(deathAge);
         age.textContent = `Age: ${deathAge}`
 
         // Append the paragraphs to div
@@ -81,19 +80,15 @@ const displayProphets = (prophets) => {
         // President Number Setup
         if (prophet.order == 1) {
             number = "st";
-            //console.log(number);
         }
         else if (prophet.order == 2) {
             number = "nd";
-            //console.log(number);
         }
         else if (prophet.order == 3) {
             number = "rd";
-            //console.log(number);
         }
         else {
             number = "th";
-            //console.log(number);
         }
     
         // Build the image portrait by setting all the relevant attribute
