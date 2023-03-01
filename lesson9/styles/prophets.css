@@ -71,6 +71,10 @@ div p{
 	margin: 5px;
 }
 
-/*img {
-	transform: scale(0.70);;
-}*/
+img {
+	max-width: 50%;
+	max-height: 225px;
+	margin-bottom: 10px;
+	box-shadow: #031925;
+	filter: drop-shadow(2px 4px 10px #031925);
+}
