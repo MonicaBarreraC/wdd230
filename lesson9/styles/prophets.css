@@ -44,6 +44,20 @@ main {
 	text-align: center;
 }
 
+button {
+	border: none;
+	border-radius: 12px;
+	padding: 5px 15px;
+	margin: 5px;
+}
+
+button:hover, button.active{
+	background-color: #AB3428;
+	color: white;
+	font-weight: bold;
+	transition: 1.5s;
+}
+
 .cards {
 	display: flex;
     flex-wrap: wrap;

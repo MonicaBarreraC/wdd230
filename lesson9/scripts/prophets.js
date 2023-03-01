@@ -9,12 +9,19 @@ document.querySelector("#last-update").textContent = `Last Updated: ${document.l
 
 // Set url 
 const url = 'https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json';
+let listP = "";
 
 // Function to fetch data using async/await
 async function getProphetData() {
     const response = await fetch(url);
     const data = await response.json();
-    //console.table(data.prophets); 
+    //console.table(data.prophets);
+    //
+    listP = data.prophets; 
+    //console.log(listP);
+    //
+
+    // Display Prophets
     displayProphets(data.prophets);
 }
 
@@ -94,6 +101,7 @@ const displayProphets = (prophets) => {
         // Build the image portrait by setting all the relevant attribute
         portrait.setAttribute('src', prophet.imageurl);
         portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname} - ${prophet.order}${number} Latter-day President`);
+        portrait.setAttribute('title', `Portait of ${prophet.name} ${prophet.lastname} - ${prophet.order}${number} Latter-day President`);
         portrait.setAttribute('loading', 'lazy');
         portrait.setAttribute('width', '340');
         portrait.setAttribute('height', '440');
@@ -108,3 +116,78 @@ const displayProphets = (prophets) => {
 } // end of function expression
   
 getProphetData();
+
+// B U T T O N S
+const allProphets = document.querySelector("#all");
+const years10 = document.querySelector("#ten-years");
+
+// All Prophets
+allProphets.addEventListener("click", function(){
+    years10.removeAttribute("class");
+    allProphets.setAttribute("class","active");
+
+    // Clear HTML
+    const node = document.querySelector(".cards");
+    node.innerHTML = "";
+    
+    //Display Filter List
+    displayProphets(listP);
+});
+
+// 10+ Years of Service
+years10.addEventListener("click", function(){
+    allProphets.removeAttribute("class");
+    years10.setAttribute("class","active");
+
+    let filterList = [];
+
+    // Filter 10+ Years
+    listP.forEach((prophet) => {
+        if (prophet.length >= 10){
+            filterList.push(prophet);
+        }
+    });
+    // Clear HTML
+    const node = document.querySelector(".cards");
+    node.innerHTML = "";
+    
+    //Display Filter List
+    displayProphets(filterList);
+});
+
+/** Atempt to convert in funtion ...
+const buttons = [allProphets, years10];
+
+// Add "active" class to clicked button and display list
+function filterBtn(btnName, list) {
+
+    // Add class "active" to clicked button only
+    buttons.forEach(btn => {
+        btn.removeAttribute("class");
+    });
+    btnName.setAttribute("class","active");
+
+    // Clear HTML
+    const node = document.querySelector(".cards");
+    node.innerHTML = "";
+
+    //Display List of Prophets
+    displayProphets(list);
+}
+
+function prophetService (minYears){
+    let filterList = [];
+
+    // Filter Years
+    listP.forEach((prophet) => {
+        if (prophet.length >= minYears){
+            filterList.push(prophet);
+        }
+    });
+
+    return filterList;
+}
+
+// All Prophets
+allProphets.addEventListener("click", filterBtn(allProphets, listP));
+*/
