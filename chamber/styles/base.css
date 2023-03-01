@@ -355,6 +355,10 @@
         margin: 2em 10px;
     }
 
+    .join-body, .thanks-body {
+        background-color: #F9F9F9;
+    }
+
     .join-main h2 {
         text-align: center;
     }
