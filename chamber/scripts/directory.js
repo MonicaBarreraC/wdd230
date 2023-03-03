@@ -8,107 +8,61 @@ async function getBusinessData() {
     const data = await response.json();
 
     directory = data.companies; 
-    console.table(data.companies);
-    //
+    //console.table(data.companies);
 
     // Display Directory
-    //displayProphets(data.prophets);
+    displayCompanies(data.companies);
 }
 
-getBusinessData();
-/*
-const displayProphets = (prophets) => {
-    const cards = document.querySelector('div.cards'); // select the output container element
+const displayCompanies = (companies) => {
+    const cards = document.querySelector("div.cards"); 
   
-    prophets.forEach((prophet) => {
+    companies.forEach((company) => {
         // Create elements to add to the div.cards element
         let card = document.createElement('section');
         let h2 = document.createElement('h2');
         let div = document.createElement("div");
-        let portrait = document.createElement('img');
-        let number = "";
-        let deathAge = "";
+        let logo = document.createElement('img');
     
-        // Build the h2 content out to show the prophet's full name - finish the template string
-        h2.textContent = `${prophet.name} ${prophet.lastname}`;
+        // Build the h2 content out to show the company name 
+        h2.textContent = `${company.name}`;
 
         // Build div with description
-        let birth = document.createElement("p");
-        let birthPlace = document.createElement("p");
-        let children = document.createElement("p");
-        let pYears = document.createElement("p");
-        let death = document.createElement("p");
-        let age = document.createElement("p");
+        let address = document.createElement("p");
+        let phone = document.createElement("p");
+        let website = document.createElement("a");
+        website.setAttribute("href", company.src);
 
         // Set description content
-        birth.textContent = `Birth: ${prophet.birthdate}`
-        birthPlace.textContent = `Place: ${prophet.birthplace}`
-        children.textContent = `Children: ${prophet.numofchildren}`
-        pYears.textContent = `Prophet Years: ${prophet.length}`
-        death.textContent = `Death: ${prophet.death}`
-
-        /// Calculate Prophet Age
-        let birthDate = new Date (prophet.birthdate);
-        birthDate = birthDate.getTime();
-        let deathDate = "";
-
-        if (prophet.death == null) {
-            // Today
-            deathDate = Date.now();
-        }
-        else {
-            // Use Death Date from API
-            deathDate = new Date (prophet.death);
-            deathDate = deathDate.getTime();
-        }
-        
-        // Subtract deathdate - birthdate
-        deathAge = (deathDate - birthDate) / 31556926000;
-        deathAge = Math.floor(deathAge);
-
-        age.textContent = `Age: ${deathAge}`
+        address.textContent = `${company.address}`
+        phone.textContent = `${company.phone}`
+        website.textContent = `${company.website}`
 
         // Append the paragraphs to div
-        div.appendChild(birth);
-        div.appendChild(birthPlace);
-        div.appendChild(children);
-        div.appendChild(pYears);
-        div.appendChild(death);
-        div.appendChild(age);
-
-        // President Number Setup
-        if (prophet.order == 1) {
-            number = "st";
-        }
-        else if (prophet.order == 2) {
-            number = "nd";
-        }
-        else if (prophet.order == 3) {
-            number = "rd";
-        }
-        else {
-            number = "th";
-        }
+        div.appendChild(address);
+        div.appendChild(phone);
+        div.appendChild(website);
     
-        // Build the image portrait by setting all the relevant attribute
-        portrait.setAttribute('src', prophet.imageurl);
-        portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname} - ${prophet.order}${number} Latter-day President`);
-        portrait.setAttribute('title', `Portrait of ${prophet.name} ${prophet.lastname} - ${prophet.order}${number} Latter-day President`);
-        portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '340');
-        portrait.setAttribute('height', '440');
+        // Setting image attributes
+        logo.setAttribute('src', company.imageurl);
+        logo.setAttribute('alt', `Logo of ${company.name}`);
+        logo.setAttribute('title', `Logo of ${company.name}`);
+        logo.setAttribute('loading', 'lazy');
+        logo.setAttribute('width', '150');
+        logo.setAttribute('height', '150');
     
         // Append the section(card) with the created elements
         card.appendChild(h2);
         card.appendChild(div);
-        card.appendChild(portrait);
+        card.appendChild(logo);
     
         cards.appendChild(card);
-    }); // end of forEach loop
-} // end of function expression
+    }); 
+}
   
-getProphetData();
+getBusinessData();
 
+/*
 // B U T T O N S
 const allProphets = document.querySelector("#all");
 const years10 = document.querySelector("#ten-years");
