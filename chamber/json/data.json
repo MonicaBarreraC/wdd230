@@ -1,0 +1,100 @@
+{
+    "copmanies": [
+      {
+        "name": "Angry Angus",
+        "address": "Avenida 2000 #310 x 31 diagonal San Luis Chuburna, Mérida, Mexico",
+        "phone": "999 481 1613",
+        "src": "https://www.facebook.com/angryangus.lasmejoreshamburguesasangus",
+        "website": "facebook.com/angryangus",
+        "imageurl": "image.jpg"
+      },
+      {
+        "name": "Celish Pasteleria",
+        "address": "C. 25 105A, Conkal, 97345 Conkal, Yuc.",
+        "phone": "999 113 4968",
+        "src": "https://www.facebook.com/profile.php?id=100063777871278",
+        "website": "facebook.com/celishpasteleria",
+        "imageurl": "image.jpg"
+      },
+      {
+        "name": "Crustáceo",
+        "address": "Calle 46B num 791 x 131 y 133 Fraccionamiento Villa Magna Sur CP 97285, Mérida, Mexico",
+        "phone": "999 392 1286",
+        "src": "https://www.facebook.com/Crustaceococinademar",
+        "website": "facebook.com/crustaceo",
+        "imageurl": "image.jpg"
+      },
+      {
+        "name": "Dogos Maui",
+        "address": "C. 26 258, Miguel Alemán, 97148 Mérida, Yuc.",
+        "phone": "999 104 2833",
+        "src": "https://www.facebook.com/dogosmaui",
+        "website": "facebook.com/dogosmaui",
+        "imageurl": "image.jpg"
+      },
+      {
+        "name": "Taquería El Amanecer",
+        "address": "C. 77 539A, Centro, 97000 Centro, Yuc.",
+        "phone": "999 224 8102",
+        "src": "https://www.facebook.com/taqueriaelamanecer1",
+        "website": "facebook.com/taqueriaelamanecer",
+        "imageurl": "image.jpg"
+      },
+      {
+        "name": "El Costeño",
+        "address": "Calle 74 # 490 x 67A Fracc las Americas 97302 Mérida, México",
+        "phone": "999 195 2821",
+        "src": "https://www.facebook.com/ElCostenoMerida",
+        "website": "facebook.com/ElCostenoMerida",
+        "imageurl": "image.jpg"
+      },
+      {
+        "name": "La Patrona",
+        "address": "Calle 23, Centro, 97370 Kanasín, Yuc.",
+        "phone": "999 115 9221",
+        "src": "https://www.facebook.com/LaPatronaHuevosMotulenos",
+        "website": "facebook.com/LaPatronaHuevosMotulenos",
+        "imageurl": "image.jpg"
+      },
+      {
+        "name": "Mejico Sabroso",
+        "address": "C. 60 419A, Parque Santa Ana, Centro, 97000 Ejido del Centro, Yuc.",
+        "phone": "999 761 9740",
+        "src": "https://www.facebook.com/mejicosabroso",
+        "website": "facebook.com/mejicosabroso",
+        "imageurl": "image.jpg"
+      },
+      {
+        "name": "Méndez Jr",
+        "address": "Av. Andrés García Lavín #337, San Antonio Cucul, 97116 Mérida, Yuc.",
+        "phone": "999 287 6001",
+        "src": "https://www.facebook.com/mendezjrmerida",
+        "website": "facebook.com/mendezjrmerida",
+        "imageurl": "image.jpg"
+      },
+      {
+        "name": "Potzollcalli",
+        "address": "C. 42 565, Los Pinos, 97143 Mérida, Yuc.",
+        "phone": "999 160 5452",
+        "src": "https://www.facebook.com/profile.php?id=100063547612507",
+        "website": "facebook.com/potzollcalli",
+        "imageurl": "image.jpg"
+      },
+      {
+        "name": "Trattoria di Alfredo",
+        "address": "Calle 67 entre Calle 62 y 64, Centro, 97000 Mérida, Yuc.",
+        "phone": "999 761 3913",
+        "src": "https://www.facebook.com/trattoriadialfredoMID",
+        "website": "facebook.com/trattoriadialfredoMID",
+        "imageurl": "image.jpg"
+      },
+      {
+        "name": "Rancho Da Picanha",
+        "address": "C. 8 461, Díaz Ordaz, 97130 Mérida, Yuc., Mérida, Mexico",
+        "phone": "999 576 7329",
+        "src": "https://www.facebook.com/ranchodapicanhamxDiazBolio",
+        "website": "facebook.com/ranchodapicanha",
+        "imageurl": "image.jpg"
+      }
+    ]
+  }
