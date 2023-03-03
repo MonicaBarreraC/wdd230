@@ -349,7 +349,7 @@
 
     /*  -  -  -  -  -  J O I N  -  -  -  -  -  */
 
-    .join-main, .thanks-main {
+    .join-main, .thanks-main, .directory-main {
         display: block;
         max-width: 940px;
         margin: 2em 10px;
@@ -439,4 +439,10 @@
         font-size: 40px;
     }
 
+    /*  -  -  -  -  -  D I R E C T O R Y  -  -  -  -  -  */
+
+    .directory-main {
+        text-align: center;
+        margin: 2em auto;
+    }
 }
