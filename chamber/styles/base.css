@@ -447,19 +447,36 @@
     }
 
     .display-btns {
-        background: rgba(135, 151, 178, 30%);
+        /*background: rgba(135, 151, 178, 30%);*/
+        background:rgba(244, 158, 76, 85%);
+        background-color: #F49E4C;
         padding: 10px;
-        margin-bottom: 5px;
+        margin: 5px;
     }
 
     .cards {
         display: grid;
-        grid-template-columns: 33% 33% 33%;
+        grid-template-columns: 100%;
         gap: 5px;
+        margin: 10px;
     }
 
     .dir-sect {
         display: block;
         grid-column: auto;
+    }
+
+    .display-btns button {
+        border: none;
+        border-radius: 12px;
+        padding: 5px 15px;
+        margin: 5px;
+    }
+    
+    .display-btns button:hover, .display-btns button.active{
+        background-color: #AB3428;
+        color: white;
+        font-weight: bold;
+        transition: 1.5s;
     }
 }

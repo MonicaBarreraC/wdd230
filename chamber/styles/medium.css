@@ -88,4 +88,10 @@
         font-size: 20px;
     }
 
+    /*  -  -  -  -  -  D I R E C T O R Y  -  -  -  -  -  */
+
+    .cards {
+        grid-template-columns: 50% 50%;
+    }
+
 }

@@ -153,5 +153,11 @@
         height: fit-content;
         margin-top: 2em;
     }
+
+    /*  -  -  -  -  -  D I R E C T O R Y  -  -  -  -  -  */
+
+    .cards {
+        grid-template-columns: 33% 33% 33%;
+    }
     
 }
