@@ -68,10 +68,12 @@ const listCompanies = (companies) => {
 
     // Create table, thead and tbody
     let table = document.createElement("table");
-    let thead = document.createElement('thead');
+    //let thead = document.createElement('thead'); /* REDUNDANT INFO? */
     let tbody = document.createElement('tbody');
 
+    /*
     // Create thead elements
+    let tHeader = document.createElement("tr");
     let tName = document.createElement('th');
     let tAddress = document.createElement("th");
     let tPhone = document.createElement("th");
@@ -83,8 +85,15 @@ const listCompanies = (companies) => {
     tPhone.textContent = "Phone";
     tWebsite.textContent = "Website";
 
+    // Append the th elements to tHeader
+    tHeader.appendChild(tName);
+    tHeader.appendChild(tAddress);
+    tHeader.appendChild(tPhone);
+    tHeader.appendChild(tWebsite);
+    thead.appendChild(tHeader);
+
     // Append thead to table
-    table.appendChild(thead);
+    table.appendChild(thead);*/ /* REDUNDANT INFO? */
   
     companies.forEach((company) => {        
         // Create elements to add to the tbody element
@@ -118,7 +127,7 @@ const listCompanies = (companies) => {
 
     table.appendChild(tbody);
     cards.appendChild(table);
-    cards.setAttribute("class", "cards table");
+    cards.setAttribute("class", "cards table-dir");
 }
   
 getBusinessData();

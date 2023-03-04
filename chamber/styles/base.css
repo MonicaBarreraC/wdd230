@@ -451,14 +451,45 @@
         background:rgba(244, 158, 76, 85%);
         background-color: #F49E4C;
         padding: 10px;
-        margin: 5px;
+        margin: 5px 0;
     }
 
-    .cards {
+    .gallery{
         display: grid;
         grid-template-columns: 100%;
         gap: 5px;
         margin: 10px;
+    }
+
+    .table-dir {
+        display: block;
+    }
+
+    table {
+        border-collapse: collapse; /* Keep? or Delete */
+    }
+
+    /*thead {
+        font-size: 1.25rem;
+        background-color: #0B3954;
+        color: #F9F9F9;
+    }*/ /* CSS FOR REDUNDANT INFO? */
+    
+    tbody tr:nth-child(even){
+        /*background-color: rgba(135, 151, 178, 0.5);*/
+        background-color: rgba(244, 158, 76, 15%);
+    }
+
+    tr {
+        height: 45px;
+    }
+
+    td {
+        padding: 5px;
+    }
+
+    td:nth-child(2){
+        width: 35%;
     }
 
     .dir-sect {
