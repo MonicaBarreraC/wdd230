@@ -481,11 +481,22 @@
     }
 
     tr {
-        height: 45px;
+        height: 60px;
     }
 
     td {
         padding: 5px;
+    }
+
+    td a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #0B3954;
+    }
+
+    td a:hover {
+        color: #AB3428;
+        transition: 0.5s;
     }
 
     td:nth-child(2){

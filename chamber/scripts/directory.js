@@ -8,7 +8,6 @@ async function getBusinessData() {
     const data = await response.json();
 
     directory = data.companies; 
-    //console.table(data.companies);
 
     // Display Directory
     displayCompanies(data.companies);
@@ -68,32 +67,7 @@ const listCompanies = (companies) => {
 
     // Create table, thead and tbody
     let table = document.createElement("table");
-    //let thead = document.createElement('thead'); /* REDUNDANT INFO? */
     let tbody = document.createElement('tbody');
-
-    /*
-    // Create thead elements
-    let tHeader = document.createElement("tr");
-    let tName = document.createElement('th');
-    let tAddress = document.createElement("th");
-    let tPhone = document.createElement("th");
-    let tWebsite = document.createElement("th");
-
-    // Set td content
-    tName.textContent = "Business Name";
-    tAddress.textContent = "Address";
-    tPhone.textContent = "Phone";
-    tWebsite.textContent = "Website";
-
-    // Append the th elements to tHeader
-    tHeader.appendChild(tName);
-    tHeader.appendChild(tAddress);
-    tHeader.appendChild(tPhone);
-    tHeader.appendChild(tWebsite);
-    thead.appendChild(tHeader);
-
-    // Append thead to table
-    table.appendChild(thead);*/ /* REDUNDANT INFO? */
   
     companies.forEach((company) => {        
         // Create elements to add to the tbody element
