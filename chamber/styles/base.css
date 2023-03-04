@@ -445,4 +445,21 @@
         text-align: center;
         margin: 2em auto;
     }
+
+    .display-btns {
+        background: rgba(135, 151, 178, 30%);
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        gap: 5px;
+    }
+
+    .dir-sect {
+        display: block;
+        grid-column: auto;
+    }
 }

@@ -20,6 +20,7 @@ const displayCompanies = (companies) => {
     companies.forEach((company) => {
         // Create elements to add to the div.cards element
         let card = document.createElement('section');
+        card.setAttribute("class", "dir-sect");
         let h2 = document.createElement('h2');
         let div = document.createElement("div");
         let logo = document.createElement('img');
@@ -52,9 +53,10 @@ const displayCompanies = (companies) => {
         logo.setAttribute('height', '150');
     
         // Append the section(card) with the created elements
+        card.appendChild(logo);
         card.appendChild(h2);
         card.appendChild(div);
-        card.appendChild(logo);
+        
     
         cards.appendChild(card);
     }); 
