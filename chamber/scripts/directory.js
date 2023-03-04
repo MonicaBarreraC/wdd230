@@ -59,47 +59,96 @@ const displayCompanies = (companies) => {
         
     
         cards.appendChild(card);
+        cards.setAttribute("class", "cards gallery");
     }); 
+}
+
+const listCompanies = (companies) => {
+    const cards = document.querySelector("div.cards"); 
+
+    // Create table, thead and tbody
+    let table = document.createElement("table");
+    let thead = document.createElement('thead');
+    let tbody = document.createElement('tbody');
+
+    // Create thead elements
+    let tName = document.createElement('th');
+    let tAddress = document.createElement("th");
+    let tPhone = document.createElement("th");
+    let tWebsite = document.createElement("th");
+
+    // Set td content
+    tName.textContent = "Business Name";
+    tAddress.textContent = "Address";
+    tPhone.textContent = "Phone";
+    tWebsite.textContent = "Website";
+
+    // Append thead to table
+    table.appendChild(thead);
+  
+    companies.forEach((company) => {        
+        // Create elements to add to the tbody element
+        let row = document.createElement('tr');
+
+        // Create elements to add to the tr element
+        let name = document.createElement('td');
+        let address = document.createElement("td");
+        let phone = document.createElement("td");
+        let tblWebsite = document.createElement("td");
+        
+        let website = document.createElement("a");
+        tblWebsite.appendChild(website);
+
+        // Set td content
+        name.textContent = `${company.name}`;
+        address.textContent = `${company.address}`;
+        phone.textContent = `${company.phone}`;
+        website.textContent = `${company.website}`;
+        website.setAttribute("href", company.src);        
+
+        // Append the td elements to row
+        row.appendChild(name);
+        row.appendChild(address);
+        row.appendChild(phone);
+        row.appendChild(tblWebsite);
+    
+        // Append the row to tbody
+        tbody.appendChild(row);
+    }); 
+
+    table.appendChild(tbody);
+    cards.appendChild(table);
+    cards.setAttribute("class", "cards table");
 }
   
 getBusinessData();
 
-/*
 // B U T T O N S
-const allProphets = document.querySelector("#all");
-const years10 = document.querySelector("#ten-years");
+const gallery = document.querySelector("#gallery-btn");
+const list = document.querySelector("#list-btn");
 
-// All Prophets
-allProphets.addEventListener("click", function(){
-    years10.removeAttribute("class");
-    allProphets.setAttribute("class","active");
+// Gallery Directory
+gallery.addEventListener("click", function(){
+    list.removeAttribute("class");
+    gallery.setAttribute("class","active");
 
     // Clear HTML
     const node = document.querySelector(".cards");
     node.innerHTML = "";
     
     //Display Filter List
-    displayProphets(listP);
+    displayCompanies(directory);
 });
 
-// 10+ Years of Service
-years10.addEventListener("click", function(){
-    allProphets.removeAttribute("class");
-    years10.setAttribute("class","active");
+// List Directory
+list.addEventListener("click", function(){
+    gallery.removeAttribute("class");
+    list.setAttribute("class","active");
 
-    let filterList = [];
-
-    // Filter 10+ Years
-    listP.forEach((prophet) => {
-        if (prophet.length >= 10){
-            filterList.push(prophet);
-        }
-    });
     // Clear HTML
     const node = document.querySelector(".cards");
     node.innerHTML = "";
     
-    //Display Filter List
-    displayProphets(filterList);
+    //Display Companies Table
+    listCompanies(directory);
 });
-*/
