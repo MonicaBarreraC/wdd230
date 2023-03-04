@@ -447,11 +447,10 @@
     }
 
     .display-btns {
-        /*background: rgba(135, 151, 178, 30%);*/
         background:rgba(244, 158, 76, 85%);
         background-color: #F49E4C;
         padding: 10px;
-        margin: 5px 0;
+        margin: 5px 10px;
     }
 
     .gallery{
@@ -466,17 +465,11 @@
     }
 
     table {
-        border-collapse: collapse; /* Keep? or Delete */
+        border-collapse: collapse;
+        margin: 10px;
     }
-
-    /*thead {
-        font-size: 1.25rem;
-        background-color: #0B3954;
-        color: #F9F9F9;
-    }*/ /* CSS FOR REDUNDANT INFO? */
     
     tbody tr:nth-child(even){
-        /*background-color: rgba(135, 151, 178, 0.5);*/
         background-color: rgba(244, 158, 76, 15%);
     }
 
@@ -492,6 +485,7 @@
         text-decoration: none;
         font-weight: bold;
         color: #0B3954;
+        text-overflow: ellipsis;
     }
 
     td a:hover {
@@ -499,8 +493,24 @@
         transition: 0.5s;
     }
 
+    td {
+        font-size: 0.55rem;
+    }
+
+    td:first-child{
+        width: 20%;
+    }
+
     td:nth-child(2){
         width: 35%;
+    }
+
+    td:nth-child(3){
+        width: 15%;
+    }
+
+    td:nth-child(4){
+        width: 30%;
     }
 
     .dir-sect {

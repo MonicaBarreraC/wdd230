@@ -156,8 +156,15 @@
 
     /*  -  -  -  -  -  D I R E C T O R Y  -  -  -  -  -  */
 
-    .cards {
+    .directory-main {
+        margin: 2em auto;
+    }
+
+    .gallery {
         grid-template-columns: 33% 33% 33%;
     }
     
+    td {
+        font-size: 16px;
+    }
 }

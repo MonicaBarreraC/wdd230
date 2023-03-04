@@ -90,8 +90,12 @@
 
     /*  -  -  -  -  -  D I R E C T O R Y  -  -  -  -  -  */
 
-    .cards {
+    .gallery {
         grid-template-columns: 50% 50%;
+    }
+
+    td {
+        font-size: 0.8rem;
     }
 
 }
