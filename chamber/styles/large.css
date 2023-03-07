@@ -167,4 +167,8 @@
     td {
         font-size: 16px;
     }
+
+    td:nth-child(4){
+        font-size: 0.9rem;
+    }
 }

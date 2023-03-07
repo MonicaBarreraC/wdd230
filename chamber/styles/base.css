@@ -511,6 +511,7 @@
 
     td:nth-child(4){
         width: 30%;
+        font-size: 0.4rem;
     }
 
     .dir-sect {

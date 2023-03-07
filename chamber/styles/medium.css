@@ -98,4 +98,8 @@
         font-size: 0.8rem;
     }
 
+    td:nth-child(4){
+        font-size: 0.7rem;
+    }
+
 }
