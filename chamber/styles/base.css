@@ -460,6 +460,10 @@
         margin: 10px;
     }
 
+    .gallery a {
+        font-size: 0.8rem;
+    }
+
     .table-dir {
         display: block;
     }
