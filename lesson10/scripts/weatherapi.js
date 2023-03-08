@@ -12,7 +12,7 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
-const url = 'http://api.openweathermap.org/data/2.5/weather?q=Fairbanks&appid=4c0f9bbc39fef5d82166c66bab59f1ed&units=metric';
+const url = 'http://api.openweathermap.org/data/2.5/weather?q=Fairbanks&appid=4c0f9bbc39fef5d82166c66bab59f1ed&units=imperial';
 
 async function apiFetch() {
     try {
@@ -32,8 +32,6 @@ async function apiFetch() {
   apiFetch();
 
 function displayResults(weatherData) {
-    // Kelvin to Fahrenheit
-    //const degrees = kelvinToFahrenheit(weatherData.main.temp);
 
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
 
@@ -44,9 +42,3 @@ function displayResults(weatherData) {
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
 }
-/*
-function kelvinToFahrenheit(kelvin) {
-    //(°K − 273.15) × 9/5 + 32 = °F
-    const fahrenheit = ((kelvin) - 273.15) * (9/5) + 32;
-    return fahrenheit.toFixed(0);
-}*/

@@ -42,3 +42,15 @@ main {
 figcaption {
 	text-transform: capitalize;
 }
+
+footer a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	transition: 1s;
+}
+
+footer a:hover {
+	color: #F49E4C;
+	transition: 1s;
+}
