@@ -35,10 +35,10 @@ h1, h2 {
 
 main {
 	margin: 2em auto;
-	max-width: 600px;
+	max-width: 940px;
+	text-align: center;
 }
 
-/* Can you find a way to change the desc output to capitalize each word of the weather description? */
 figcaption {
 	text-transform: capitalize;
 }
