@@ -38,3 +38,7 @@ main {
 	max-width: 600px;
 }
 
+/* Can you find a way to change the desc output to capitalize each word of the weather description? */
+figcaption {
+	text-transform: capitalize;
+}
