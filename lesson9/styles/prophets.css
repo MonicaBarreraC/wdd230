@@ -59,8 +59,11 @@ button:hover, button.active{
 }
 
 .cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 340px);
+	/* Using Flex 
 	display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;*/
     justify-content: space-evenly;
 	margin-top: 2em;
 }
