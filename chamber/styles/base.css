@@ -211,6 +211,7 @@
         color: white;
         padding: 1em 1.5em;
         border-radius: 25px;
+        transition: 1.5s;
     }
 
     .join-hero-button a:hover {
