@@ -8,10 +8,9 @@ const degreesUnits = document.querySelector("#degrees");
 const windSpeed = document.querySelector("#wind-speed");
 const windsSpeedUnits = document.querySelector("#speed-units");
 
+const url = "http://api.openweathermap.org/data/2.5/weather?q=Conkal&appid=4c0f9bbc39fef5d82166c66bab59f1ed&units=imperial";
+
 async function apiFetch() {
-
-  const url = "http://api.openweathermap.org/data/2.5/weather?q=Conkal&appid=4c0f9bbc39fef5d82166c66bab59f1ed&units=imperial";
-
     try {
       const response = await fetch(url);
       if (response.ok) {
