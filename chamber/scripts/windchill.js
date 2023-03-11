@@ -1,3 +1,38 @@
+// -  -  -  -  -  B U T T O N  -  -  -  -  -  -
+
+const degreesButton = document.querySelector("#degree-button");
+
+degreesButton.addEventListener("click", function(){
+    // Change C <-> F
+    if ( degreesButton.textContent == "°C"){
+        degreesButton.textContent = "°F";
+        // Change Degrees Displayed
+        // Change Wind Speed Displayed
+    }
+    else {
+        degreesButton.textContent = "°C";
+        // Change Degrees Displayed
+        // Change Wind Speed Displayed
+    }
+});
+
+// -  -  -  -  C H A N G E  U N I T S  -  -  -  -  -
+
+// Formula: (0°C * 9/5) + 32 = 32°F
+function celsiusToF(temperature) {
+    temperature = (temperature * 9/5) + 32;
+    return temperature;
+}
+
+// Formula: (32°F − 32) × 5/9 = 0°C
+function fahrenheitToC(temperature) {
+    temperature = (temperature - 32) * 5/9;
+    return temperature;
+}
+
+
+// -  -  -  -  W I N D  C H I L L   -  -  -  -  -
+
 // Get values
 let t = document.querySelector("#weather-temp").textContent;
 let s = document.querySelector("#wind-speed").textContent;
@@ -6,10 +41,9 @@ let degrees = document.querySelector("#degrees").textContent;
 let speedUnits = document.querySelector("#speed-units").textContent;
 
 // Convert °C to °F
-// Formula: (0°C * 9/5) + 32 = 32°F
 if (degrees == "C") {
 
-    t = (t * 9/5) + 32;
+    t = celsiusToF(t);
     degrees = "F";
 
 }
@@ -22,6 +56,8 @@ if (speedUnits == "km/h") {
     speedUnits = "mph";
 
 }
+
+// Wind Chill Calculation
 
 // Check if they meet spacifiaction limits
 // <=50°F and >3.0mph

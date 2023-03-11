@@ -1,18 +1,11 @@
-// Get Year
-const year = new Date().getFullYear();
-document.querySelector("#copyright-year").textContent = `© ${year}`;
-
-// Last Update
-document.querySelector("#last-update").textContent = `Last Updated: ${document.lastModified}`
-
-// -  -  -  -  W E A T H E R   -  -  -  -  -
+// -  -  -  -  W E A T H E R  -  -  -  -  -
 
 // select HTML elements in the document
-const currentTemp = document.querySelector('#current-temp');
+const currentTemp = document.querySelector('#weather-temp');
 const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
+const captionDesc = document.querySelector('#weather-desc');
 
-const url = 'http://api.openweathermap.org/data/2.5/weather?q=Fairbanks&appid=4c0f9bbc39fef5d82166c66bab59f1ed&units=imperial';
+const url = 'http://api.openweathermap.org/data/2.5/weather?q=Conkal&appid=4c0f9bbc39fef5d82166c66bab59f1ed&units=imperial';
 
 async function apiFetch() {
     try {

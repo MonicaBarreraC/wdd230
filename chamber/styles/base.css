@@ -236,6 +236,22 @@
         font-size: 80px;
     }
 
+    #degree-button {
+        border: none;
+        border-radius: 20px;
+        background-color: #F49E4C;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 3px;
+        padding: 10px 20px;
+        transition: 2s;
+    }
+
+    #degree-button:hover {
+        box-shadow: inset 0 0 0 50px #AB3428;
+        transition: 2s;
+    }
+
     .icon-emoji {
         font-size: 70px;
     }
