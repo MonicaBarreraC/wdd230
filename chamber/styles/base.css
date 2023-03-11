@@ -232,8 +232,12 @@
         font-size: 35px;
     }
 
-    .weather-icon {
-        font-size: 80px;
+    #weather-temp {
+        font-weight: bold;
+    }
+
+    #weather-desc {
+        text-transform: capitalize;
     }
 
     #degree-button {
