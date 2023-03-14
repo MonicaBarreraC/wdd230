@@ -322,6 +322,18 @@
         font-size: 13px;
     }
 
+    .page-details a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 1s;
+    }
+    
+    .page-details a:hover {
+        color: #F49E4C;
+        transition: 1s;
+    }
+
     /*  -  -  -  -  -  D I S C O V E R  -  -  -  -  -  */
 
     .discover-main {
