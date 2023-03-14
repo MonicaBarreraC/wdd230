@@ -52,6 +52,11 @@
         align-self: start;
     }
 
+    .title-chamber a {
+        text-decoration: none;
+        color: white;
+    }
+
     .title-name {
         font-family: 'Libre Baskerville', serif;
         font-size: 16px;
