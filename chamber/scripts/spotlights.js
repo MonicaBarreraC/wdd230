@@ -6,11 +6,9 @@ let premiumB = [];
 async function getBusinessData() {
     const response = await fetch(directoryUrl);
     const data = await response.json();
-    //console.table(data.companies);
 
     // Check if Membership -> Silver or Gold
     premiumB = membershipCheck(data.companies);
-    //console.table(premiumB);
 
     // Display Spotlights
     displaySpotlights(premiumB);
@@ -32,23 +30,14 @@ const displaySpotlights = (business) => {
     let originalList = business;
     let selected = [];
 
-    //console.log("Original List:");
-    //console.table(originalList);
-
     for (let i = 0; i < 3; i++ ){
 
         // Select random business
         let random = Math.floor(Math.random() * originalList.length);
         selected.push(originalList[random]);
         originalList.splice(random, 1);
-        //console.log("Delete " + random);
-        //console.log("Original List Now:");
-        //console.table(originalList);
 
     }
-
-    //console.log("Final Selected:");
-    //console.table(selected);
   
     selected.forEach((company) => {
         // Create elements to add to the section.spotlights element
