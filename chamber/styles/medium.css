@@ -103,4 +103,10 @@
         font-size: 0.7rem;
     }
 
+    /**/
+
+    .map {
+        grid-column: 1/3;
+    }
+
 }
