@@ -385,15 +385,15 @@
         margin: 5px 0;
     }
 
-    /*  -  -  -  -  -  J O I N  -  -  -  -  -  */
+    /*  -  -  -  -  -  J O I N  &  C O N T A C T  -  -  -  -  -  */
 
-    .join-main, .thanks-main, .directory-main {
+    .join-main, .thanks-main, .directory-main, .contact-main {
         display: block;
         max-width: 940px;
         margin: 2em 10px;
     }
 
-    .join-body, .thanks-body {
+    .join-body, .thanks-body, .contact-main {
         background-color: #F9F9F9;
     }
 
@@ -401,25 +401,25 @@
         text-align: center;
     }
 
-    .join-main form fieldset {
+    .join-main form fieldset, .contact-main form fieldset {
         margin: 1.5em 0;
         border: 1px solid;
         border-radius: 15px; /*5*/
         padding: 15px 2%;
     }
 
-    .join-main form legend {
+    .join-main form legend, .contact-main form legend {
         padding: 0 5px;
         margin: 0 10px;
     }
 
-    .join-main label.top {
+    .join-main label.top, .contact-main label.top {
         display: block;
         padding-top: 1em;
         font-size: 14px;
     }
 
-    .join-main label.top input, .join-main label.top textarea {
+    .join-main label.top input, .join-main label.top textarea, .contact-main label.top input, .contact-main label.top textarea {
         display: block;
         font-size: 16px;
         padding: 12px;
@@ -435,7 +435,7 @@
         padding: 8px;
     }
 
-    .join-main input.submitBtn {
+    .join-main input.submitBtn, .contact-main input.submitBtn {
         border: none;
         background-color: #F49E4C;
         color: white;
@@ -445,7 +445,7 @@
         max-width: 300px;
     }
 
-    .join-main input.submitBtn:hover {
+    .join-main input.submitBtn:hover, .contact-main input.submitBtn:hover {
         background-color: #AB3428;
         color: white;
         transition: 1.5s;
@@ -573,5 +573,27 @@
         color: white;
         font-weight: bold;
         transition: 1.5s;
+    }
+
+    /*  -  -  -  -  -  C O N T A C T  -  -  -  -  -  */
+
+    .board {
+        margin: 1em 0;
+        border: #F49E4C 1px solid;
+        border-radius: 15px;
+        padding: 15px 2%;
+        background: rgba(244, 158, 76, 15%);
+        height: fit-content;
+    }
+
+    .board section {
+        display: block;
+        padding: 10px 1em;
+        background: transparent;
+    }
+
+    .board section h3, .board section p{
+        margin: 0;
+        padding: 5px;
     }
 }
