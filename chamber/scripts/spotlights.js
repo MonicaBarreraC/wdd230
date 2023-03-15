@@ -74,6 +74,7 @@ const displaySpotlights = (business) => {
         spotlight.appendChild(h3);
         spotlight.appendChild(logo);
         spotlight.appendChild(div);
+        spotlight.setAttribute("class", "spotlight");
     
         spotlights.appendChild(spotlight);
     }); 

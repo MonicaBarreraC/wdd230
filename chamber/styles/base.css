@@ -280,7 +280,7 @@
         border: none;
     }
 
-    .spotlight-3 {
+    .spotlight:nth-child(3) {
         display: none;
     }
 

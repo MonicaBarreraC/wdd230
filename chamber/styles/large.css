@@ -109,7 +109,7 @@
         width: 92%;
     }
 
-    .spotlight-3 {
+    .spotlight:nth-child(3) {
         display: block;
         margin-bottom: 0;
     }
