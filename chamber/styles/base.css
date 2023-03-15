@@ -471,7 +471,7 @@
         border-left: #AE0A25 solid 6px;
     }
     
-    form label.top input:required:valid, form label.top textarea:valid {
+    form label.top input:required:valid, .contact-main form label.top textarea:valid {
         border-left: #24A810 solid 6px;
     }
 
