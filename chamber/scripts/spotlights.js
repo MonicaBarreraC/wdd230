@@ -9,7 +9,6 @@ async function getBusinessData() {
 
     // Check if Membership -> Silver or Gold
     membershipCheck(data.companies);
-    //console.table(business);
 
     // Display Spotlights
     displaySpotlights(business);
@@ -75,7 +74,6 @@ const displaySpotlights = (business) => {
         spotlight.appendChild(h3);
         spotlight.appendChild(logo);
         spotlight.appendChild(div);
-        
     
         spotlights.appendChild(spotlight);
     }); 
