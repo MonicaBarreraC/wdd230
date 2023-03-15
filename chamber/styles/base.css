@@ -276,6 +276,10 @@
         margin-bottom: 10px;
     }
 
+    .spotlights div.details {
+        border: none;
+    }
+
     .spotlight-3 {
         display: none;
     }
