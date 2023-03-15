@@ -284,6 +284,14 @@
         display: none;
     }
 
+    .news img {
+        margin: 10px;
+    }
+
+    .news div{
+        padding: 10px;
+    }
+
     /* -  -  FOOTER  -  - */
 
     footer .address-desc, footer .contact-information {
