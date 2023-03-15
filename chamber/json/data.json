@@ -6,7 +6,7 @@
         "phone": "999 481 1613",
         "src": "https://www.facebook.com/angryangus.lasmejoreshamburguesasangus",
         "website": "facebook.com/angryangus",
-        "imageurl": "../images/directory/angry-angus.jpg"
+        "imageurl": "/images/directory/angry-angus.jpg"
       },
       {
         "name": "Celish Pasteleria",
@@ -14,7 +14,7 @@
         "phone": "999 113 4968",
         "src": "https://www.facebook.com/profile.php?id=100063777871278",
         "website": "facebook.com/celishpasteleria",
-        "imageurl": "../images/directory/celish-pasteleria.jpg"
+        "imageurl": "/images/directory/celish-pasteleria.jpg"
       },
       {
         "name": "Crustáceo",
@@ -22,7 +22,7 @@
         "phone": "999 392 1286",
         "src": "https://www.facebook.com/Crustaceococinademar",
         "website": "facebook.com/crustaceo",
-        "imageurl": "../images/directory/crustaceo-cocina.jpg"
+        "imageurl": "/images/directory/crustaceo-cocina.jpg"
       },
       {
         "name": "Dogos Maui",
@@ -30,7 +30,7 @@
         "phone": "999 104 2833",
         "src": "https://www.facebook.com/dogosmaui",
         "website": "facebook.com/dogosmaui",
-        "imageurl": "../images/directory/dogos-maui.jpg"
+        "imageurl": "/images/directory/dogos-maui.jpg"
       },
       {
         "name": "Taquería El Amanecer",
@@ -38,7 +38,7 @@
         "phone": "999 224 8102",
         "src": "https://www.facebook.com/taqueriaelamanecer1",
         "website": "facebook.com/taqueriaelamanecer",
-        "imageurl": "../images/directory/el-amanecer.jpg"
+        "imageurl": "/images/directory/el-amanecer.jpg"
       },
       {
         "name": "El Costeño",
@@ -46,7 +46,7 @@
         "phone": "999 195 2821",
         "src": "https://www.facebook.com/ElCostenoMerida",
         "website": "facebook.com/ElCostenoMerida",
-        "imageurl": "../images/directory/el-costeno.jpg"
+        "imageurl": "/images/directory/el-costeno.jpg"
       },
       {
         "name": "La Patrona",
@@ -54,7 +54,7 @@
         "phone": "999 115 9221",
         "src": "https://www.facebook.com/LaPatronaHuevosMotulenos",
         "website": "facebook.com/LaPatrona",
-        "imageurl": "../images/directory/la-patrona.jpg"
+        "imageurl": "/images/directory/la-patrona.jpg"
       },
       {
         "name": "Mejico Sabroso",
@@ -62,7 +62,7 @@
         "phone": "999 761 9740",
         "src": "https://www.facebook.com/mejicosabroso",
         "website": "facebook.com/mejicosabroso",
-        "imageurl": "../images/directory/mejico-sabroso.jpg"
+        "imageurl": "/images/directory/mejico-sabroso.jpg"
       },
       {
         "name": "Méndez Jr",
@@ -70,7 +70,7 @@
         "phone": "999 287 6001",
         "src": "https://www.facebook.com/mendezjrmerida",
         "website": "facebook.com/mendezjrmerida",
-        "imageurl": "../images/directory/mendez-jr.jpg"
+        "imageurl": "/images/directory/mendez-jr.jpg"
       },
       {
         "name": "Potzollcalli",
@@ -78,7 +78,7 @@
         "phone": "999 160 5452",
         "src": "https://www.facebook.com/profile.php?id=100063547612507",
         "website": "facebook.com/potzollcalli",
-        "imageurl": "../images/directory/potzollcalli.jpg"
+        "imageurl": "/images/directory/potzollcalli.jpg"
       },
       {
         "name": "Trattoria di Alfredo",
@@ -86,7 +86,7 @@
         "phone": "999 761 3913",
         "src": "https://www.facebook.com/trattoriadialfredoMID",
         "website": "facebook.com/trattoriadialfredo",
-        "imageurl": "../images/directory/trattoria-di-alfredo.jpg"
+        "imageurl": "/images/directory/trattoria-di-alfredo.jpg"
       },
       {
         "name": "Rancho Da Picanha",
@@ -94,7 +94,7 @@
         "phone": "999 576 7329",
         "src": "https://www.facebook.com/ranchodapicanhamxDiazBolio",
         "website": "facebook.com/ranchodapicanha",
-        "imageurl": "../images/directory/rancho-da-picanha.jpg"
+        "imageurl": "/images/directory/rancho-da-picanha.jpg"
       }
     ]
   }
