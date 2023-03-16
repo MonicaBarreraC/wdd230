@@ -282,6 +282,7 @@
 
     .spotlights div.details {
         border: none;
+        width: 90%;
     }
 
     .spotlight:nth-child(3) {
