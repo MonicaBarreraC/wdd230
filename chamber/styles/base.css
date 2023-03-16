@@ -238,6 +238,10 @@
         font-size: 35px;
     }
 
+    .weather-icon-temp img {
+        padding: 10px;
+    }
+
     #weather-temp {
         font-weight: bold;
     }
