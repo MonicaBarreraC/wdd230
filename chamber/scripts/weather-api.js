@@ -112,8 +112,6 @@ const degreesButton = document.querySelector("#degree-button");
 
 degreesButton.addEventListener("click", function(){
 
-  let wcTemp;
-
   // Change C <-> F
   if ( degreesButton.textContent == "°C"){
     degreesButton.textContent = "°F";
@@ -127,9 +125,10 @@ degreesButton.addEventListener("click", function(){
     speedUnits = "kmh";
 
     // Change Wind Chill Degrees
-    wcTemp = fahrenheitToC(windChillTemp.textContent).toFixed(0);
-    windChillUnits.textContent = "°C";
-
+    if (windChillTemp.textContent != "N/A"){
+      windChillTemp.textContent = fahrenheitToC(windChillTemp.textContent).toFixed(0);
+      windChillUnits.textContent = "°C";
+    }
   }
   else {
     degreesButton.textContent = "°C";
@@ -143,8 +142,10 @@ degreesButton.addEventListener("click", function(){
     speedUnits = "mph";
 
     // Change Wind Chill Degrees
-    wcTemp = celsiusToF(windChillTemp.textContent).toFixed(0);
-    windChillUnits.textContent = "°F";
+    if (windChillTemp.textContent != "N/A"){
+      windChillTemp.textContent = celsiusToF(windChillTemp.textContent).toFixed(0);
+      windChillUnits.textContent = "°F";
+    }
 
   }
 
@@ -152,6 +153,5 @@ degreesButton.addEventListener("click", function(){
   degreesUnits.textContent = degrees;
   windSpeed.textContent = s;
   windSpeedUnits.textContent = speedUnits;
-  windChillTemp.textContent = wcTemp;
 
 });
