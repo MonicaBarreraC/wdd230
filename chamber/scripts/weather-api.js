@@ -65,7 +65,7 @@ function displayResults(weatherData) {
 
     weatherIcon.setAttribute("src", iconSrc);
     weatherIcon.setAttribute("alt", desc);
-    weatherIcon.setAttribute("title", desc);
+    //weatherIcon.setAttribute("title", desc);
     captionDesc.textContent = desc;
     degreesUnits.textContent = "F";
     windSpeed.textContent = weatherData.wind.speed.toFixed(1);
