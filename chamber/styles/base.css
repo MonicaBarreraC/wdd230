@@ -422,6 +422,10 @@
         text-align: center;
     }
 
+    .join-main h3{
+        font-size: 16px;
+    }
+
     .join-main form fieldset, .contact-main form fieldset {
         margin: 1.5em 0;
         border: 1px solid;
@@ -458,8 +462,8 @@
 
     .join-main input.submitBtn, .contact-main input.submitBtn {
         border: none;
-        background-color: #F49E4C;
-        color: #021621; /* ----- */
+        background-color: #AB3428;
+        color: white;
         padding: 1em 1.5em;
         border-radius: 25px;
         width: 96%;
@@ -467,7 +471,7 @@
     }
 
     .join-main input.submitBtn:hover, .contact-main input.submitBtn:hover {
-        background-color: #AB3428;
+        background-color: #F49E4C;
         color: white;
         transition: 1.5s;
     }
