@@ -158,9 +158,9 @@
 
     #current-date {
         display: block;
-        background-color: #8797B2;
+        background-color: #4b6a85;
+        /*font-weight: bold;*/
         color: white;
-        font-weight: bold;
         padding: 10px;
         margin-bottom: 0;
     }
