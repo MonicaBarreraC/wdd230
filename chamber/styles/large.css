@@ -17,8 +17,18 @@
         align-self: center;
     }
 
+    #menu {
+        display: none;
+    }
+
+    .closed {
+        display: flex;
+    }
+
     nav {
+        grid-row: 1/2;
         grid-column: 3/4;
+        display: flex;
         align-items: center;
         flex-direction: row;
         justify-content: flex-end;
@@ -33,10 +43,6 @@
     .navigation {
         display: flex;
         align-items: center;
-    }
-
-    .navigation li:first-child {
-        display: none;
     }
 
     .navigation li {

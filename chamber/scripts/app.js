@@ -22,8 +22,22 @@ document.querySelector("#last-update").textContent = `Last Updated: ${document.l
 // -  -  -  -  -  -  M E N U -  -  -  -  -  - 
 
 // Hamburger Menu
-const mainNav = document.querySelector(".navigation");
+const mainNav = document.querySelector("nav");
 const hamButton = document.querySelector("#menu");
 
+/* OLD Version
 //  Toggle Part
 hamButton.addEventListener("click", () => {mainNav.classList.toggle("responsive")}, false);
+*/
+
+hamButton.addEventListener("click", function(){
+    // Change ≡ <-> ×
+    if (hamButton.textContent == "≡"){
+        hamButton.textContent = "×";
+        mainNav.removeAttribute("class");
+    }
+    else {
+        hamButton.textContent = "≡";
+        mainNav.setAttribute("class", "hidden");
+    }
+});
