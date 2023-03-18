@@ -25,11 +25,6 @@ document.querySelector("#last-update").textContent = `Last Updated: ${document.l
 const mainNav = document.querySelector("nav");
 const hamButton = document.querySelector("#menu");
 
-/* OLD Version
-//  Toggle Part
-hamButton.addEventListener("click", () => {mainNav.classList.toggle("responsive")}, false);
-*/
-
 hamButton.addEventListener("click", function(){
     // Change ≡ <-> ×
     if (hamButton.textContent == "≡"){
@@ -43,6 +38,7 @@ hamButton.addEventListener("click", function(){
 });
 
 // -  -  -  -  -  -  J O I N -  -  -  -  -  - 
+
 if (document.querySelector("#time-stamp") != null){
     document.querySelector("#time-stamp").textContent =  new Date();
 }
