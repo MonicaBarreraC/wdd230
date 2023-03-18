@@ -69,7 +69,7 @@ const displaySpotlights = (business) => {
         // Setting image attributes
         logo.setAttribute('src', company.imageurl);
         logo.setAttribute('alt', `Logo of ${company.name}`);
-        logo.setAttribute('title', `Logo of ${company.name}`);
+        logo.setAttribute('title', `${company.name} Logo`);
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', '150');
         logo.setAttribute('height', '150');
