@@ -36,8 +36,7 @@ let windSpeedUnits = document.querySelector("#speed-units");
 let windChillTemp = document.querySelector("#wind-chill");
 let windChillUnits = document.querySelector("#wind-chill-units");
 
-const url = "http://api.openweathermap.org/data/2.5/weather?q=Michigan&appid=4c0f9bbc39fef5d82166c66bab59f1ed&units=imperial";
-//const url = "http://api.openweathermap.org/data/2.5/weather?q=Conkal&appid=4c0f9bbc39fef5d82166c66bab59f1ed&units=imperial";
+const url = "http://api.openweathermap.org/data/2.5/weather?q=Conkal&appid=4c0f9bbc39fef5d82166c66bab59f1ed&units=imperial";
 
 async function apiFetch() {
     try {
