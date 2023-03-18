@@ -41,3 +41,8 @@ hamButton.addEventListener("click", function(){
         mainNav.setAttribute("class", "hidden-nav");
     }
 });
+
+// -  -  -  -  -  -  J O I N -  -  -  -  -  - 
+if (document.querySelector("#time-stamp") != null){
+    document.querySelector("#time-stamp").textContent =  new Date();
+}
