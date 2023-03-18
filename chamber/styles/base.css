@@ -183,12 +183,10 @@
     main section div a {
         text-decoration: none;
         font-weight: bold;
-        /*color:#F49E4C;*/
         color:#AB3428;
     }
 
     main section div a:hover {
-        /*color:#AB3428;*/
         color:#F49E4C;
     }
 
@@ -214,7 +212,7 @@
     }
 
     .join-hero-button a {
-        background-color: #F49E4C;
+        background-color: #AB3428;
         color: white;
         padding: 1em 1.5em;
         border-radius: 25px;
@@ -222,8 +220,8 @@
     }
 
     .join-hero-button a:hover {
-        background-color: #AB3428;
-        color: white;
+        background-color: #F49E4C;
+        color: white; /* */
         transition: 1.5s;
     }
 
@@ -255,8 +253,8 @@
     #degree-button {
         border: none;
         border-radius: 20px;
-        background-color: #F49E4C;
-        color: white;
+        background-color: #AB3428;
+        color: white; /* ----- */
         font-weight: bold;
         letter-spacing: 3px;
         padding: 10px 20px;
@@ -264,7 +262,7 @@
     }
 
     #degree-button:hover {
-        box-shadow: inset 0 0 0 50px #AB3428;
+        box-shadow: inset 0 0 0 50px #F49E4C;
         transition: 2s;
     }
 
@@ -461,7 +459,7 @@
     .join-main input.submitBtn, .contact-main input.submitBtn {
         border: none;
         background-color: #F49E4C;
-        color: white;
+        color: #021621; /* ----- */
         padding: 1em 1.5em;
         border-radius: 25px;
         width: 96%;

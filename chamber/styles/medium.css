@@ -35,7 +35,7 @@
 
     .join-join-button a {
         display: block;
-        background-color: #F49E4C;
+        background-color: #AB3428;
         color: white;
         border-radius: 25px;
         padding-top: 1em;
@@ -44,7 +44,7 @@
     }
 
     .join-join-button a:hover {
-        background-color: #AB3428;
+        background-color: #F49E4C;
         color: white;
         transition: 1.5s;
     }
