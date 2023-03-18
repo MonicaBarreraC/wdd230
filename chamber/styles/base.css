@@ -20,7 +20,7 @@
         max-width: 100%;
     }
 
-    .hidden, .closed{
+    .hidden, .closed, .hidden-nav{
         display: none;
     }
 

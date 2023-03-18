@@ -38,6 +38,6 @@ hamButton.addEventListener("click", function(){
     }
     else {
         hamButton.textContent = "≡";
-        mainNav.setAttribute("class", "hidden");
+        mainNav.setAttribute("class", "hidden-nav");
     }
 });

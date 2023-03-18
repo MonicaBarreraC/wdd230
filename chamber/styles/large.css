@@ -34,6 +34,10 @@
         justify-content: flex-end;
     }
 
+    .hidden-nav {
+        display: flex;
+    }
+
     .active {
         border: white;
         border-bottom: 2px solid white;
