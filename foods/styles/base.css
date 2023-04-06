@@ -119,6 +119,7 @@
 
     .call-to-action p {
         font-weight: bold;
+        text-shadow: 0 0 20px black;
         padding: 5px;
         font-size: 1.2rem;
     }
@@ -139,10 +140,15 @@
 
     .areas h2 {
         text-align: center;
-        }
+    }
 
     .areas figure {
-        margin: 1em;
+        margin: 1em auto;
+    } 
+
+    figure img {
+        max-width: 100%;
+        border-radius: 10px;
     }
 
     figcaption {
@@ -151,7 +157,13 @@
     }
 
     .areas-info {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5em;
+    }
+
+    .area-2, .area-3 {
+        display: none;
     }
 
     .areas-info p {
@@ -362,7 +374,13 @@
         text-align: center;
     }
 
-    .areas li {
+    .about-main .areas a {
+        text-decoration: none;
+        color: #D90057;
+        font-weight: bold;
+    }
+
+    .about-main .areas li {
         padding-bottom: 10px;
     }
 

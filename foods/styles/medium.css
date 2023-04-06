@@ -13,6 +13,14 @@
         margin-left: 50px;
     }
 
+    .areas-info {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .area-2{
+        display: block;
+    }
+
     .weather {
         grid-template-columns: 1fr 2fr;
     }
