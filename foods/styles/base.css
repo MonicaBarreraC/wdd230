@@ -125,7 +125,7 @@
     }
     
     .fresh-button {
-        background-color: #D90057; /*++++++++++++++++++++++++++++++++++++++++++++*/
+        background-color: #D90057;
         color: white;
         text-decoration: none;
         font-weight: bold;
@@ -168,6 +168,7 @@
 
     .areas-info p {
         padding: 1em;
+        line-height: 1.5;
     }
 
     /* .  .  .  .  .  W E A T H E R  .  .  .  .  .  .  */
@@ -232,7 +233,7 @@
 
     .forecast section{
         background-color: #F9F9F9;
-        border: 1px solid black;
+        border: 1px solid #E0E0E0;
         border-radius: 10px;
         width: 90%;
         text-align: center;
@@ -261,17 +262,17 @@
     /* .  .  .  .  .  D R I N K S  .  .  .  .  .  .  */
 
     .current-drinks p{
-        background-color: aquamarine;
+        background-color: rgba(242, 199, 68, 0.9);
         padding: 10px;
         text-align: center;
-        font-weight: bold; /*+++++++++++++++++++++++++++++*/
+        font-weight: bold; 
     }
     
 
     /*  -  -  -  -  -  * F O O T E R * -  -  -  -  -  */
 
     footer {
-        background-color: #9EAB0D; /*+++++++++++++++++++++++++++++++*/
+        background-color: #9EAB0D; 
         color: white;
         padding: 0.5em;
         text-align: center;
@@ -289,7 +290,7 @@
     .summary {
         grid-column: 1/2;
         grid-row: 2/3;
-        border: 1px solid;
+        border: 1px solid #3D5E67;
         border-radius: 10px;
         padding: 1em;
         margin: 2em 0;
@@ -308,7 +309,7 @@
 
     form fieldset {
         margin: 1.5em 0;
-        border: 1px solid; /*- --------------------------*/
+        border: 1px solid #3D5E67;
         border-radius: 15px; 
         padding: 15px 2%;
     }
@@ -337,7 +338,6 @@
 
     form label.top input:required, form select:required {
         border: gray solid 1px; /*- --------------------------*/
-        /*background-color: rgba(217, 0, 87, 0.2); /*---------------------*/
     }
 
     form select {

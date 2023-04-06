@@ -15,3 +15,11 @@ hamButton.addEventListener("click", function(){
         mainNav.setAttribute("class", "hidden-nav");
     }
 });
+
+// -  -  -  -  -  -  F O O T E R  -  -  -  -  - 
+// Get Year
+const year = new Date().getFullYear();
+document.querySelector("#copyright-year").textContent = `© ${year}`;
+
+// Last Update
+document.querySelector("#last-update").textContent = `Last Updated: ${document.lastModified}`;
