@@ -137,6 +137,27 @@
         box-shadow: inset 0 0 0 25px #3D5E67;
     }
 
+    .areas h2 {
+        text-align: center;
+        }
+
+    .areas figure {
+        margin: 1em;
+    }
+
+    figcaption {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .areas-info {
+        display: flex;
+    }
+
+    .areas-info p {
+        padding: 1em;
+    }
+
     /* .  .  .  .  .  W E A T H E R  .  .  .  .  .  .  */
 
     .weather {
@@ -321,9 +342,13 @@
 
     .about-main {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         margin: 1em;
 
+    }
+
+    .about-main h2, .about-main section, .about-main .map {
+        grid-column: 1/3;
     }
 
     .about-main h2 {
@@ -333,8 +358,17 @@
 
     }
 
+    .about-main div h3 {
+        text-align: center;
+    }
+
     .areas li {
         padding-bottom: 10px;
+    }
+
+    .contact-info p {
+        margin-left: 1em;
+        margin-right: 1em;
     }
 
     .about-main .map {
