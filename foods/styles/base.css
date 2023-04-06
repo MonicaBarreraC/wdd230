@@ -320,6 +320,25 @@
 
     /*  -  -  -  -  -  A B O U T  U S  -  -  -  -  -  */
 
+    .about-main {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 1em;
+
+    }
+
+    .about-main h2 {
+        text-align: center;
+        font-weight: bold;
+
+    }
+
+    .about-main .map {
+        justify-self: center;
+        width: 100%;
+    }
+
+
     
     /*background-color: #9EAB0D;*/
     /*background-color: #F2C744;*/
