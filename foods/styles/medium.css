@@ -5,6 +5,10 @@
         transition: 1s;
     }
 
+    .banner-fresh {
+        background: url("../images/background-1.png");
+    }
+
     .call-to-action {
         margin-left: 50px;
     }
@@ -54,6 +58,10 @@
 
     .about-main .areas, .about-main .contact-info {
         grid-column: 1/2;
+    }
+
+    .about-main div {
+        margin-right: 1em;
     }
 
     .about-main div h3 {

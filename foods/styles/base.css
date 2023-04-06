@@ -106,8 +106,7 @@
         height: 320px;
         width: auto;
         max-width: 100%;
-        /*background-color: aliceblue;*/
-        background: url("../images/background-1.png");
+        background: url("../images/background-2.png");
     }
 
     .call-to-action {
@@ -330,7 +329,12 @@
     .about-main h2 {
         text-align: center;
         font-weight: bold;
+        margin-bottom: 5px;
 
+    }
+
+    .areas li {
+        padding-bottom: 10px;
     }
 
     .about-main .map {
