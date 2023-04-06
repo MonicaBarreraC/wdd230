@@ -104,7 +104,10 @@
 
     .banner-fresh {
         height: 320px;
-        background-color: aliceblue;
+        width: auto;
+        max-width: 100%;
+        /*background-color: aliceblue;*/
+        background: url("../images/background-1.png");
     }
 
     .call-to-action {
@@ -112,6 +115,7 @@
         width: fit-content;
         margin-top: 80px;
         margin-left: 20px;
+        color: white;
     }
 
     .call-to-action p {
