@@ -356,10 +356,21 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin: 1em;
-
+        column-gap: 10px;
     }
 
-    .about-main h2, .about-main section, .about-main .map {
+    .about-main .about-banner{
+        border: none;
+        margin: 0;
+    }
+
+    .about-banner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .about-main h2, .about-main section, .about-main .map, .about-banner {
         grid-column: 1/3;
     }
 
@@ -367,7 +378,18 @@
         text-align: center;
         font-weight: bold;
         margin-bottom: 5px;
+        position: relative;
+        bottom: 250px;
+        font-size: 40px;
+        letter-spacing: 4px;
+        color: white;
+        text-shadow: 0 0 20px black;
+    }
 
+    .about-main div{
+        border: 3px double #3D5E67;
+        border-radius: 10px;
+        margin: 0;
     }
 
     .about-main div h3 {
@@ -392,6 +414,7 @@
     .about-main .map {
         justify-self: center;
         width: 100%;
+        padding-top: 10px;
     }
 
 

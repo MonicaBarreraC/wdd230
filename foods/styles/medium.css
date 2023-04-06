@@ -57,7 +57,6 @@
 
     .about-main {
         grid-template-columns: 1fr 2fr;
-
     }
 
     .about-main .areas, .about-main .contact-info {
@@ -65,7 +64,7 @@
     }
 
     .about-main div {
-        margin-right: 1em;
+        margin: 1em;
     }
 
     .about-main div p {
@@ -74,8 +73,9 @@
 
     .about-main .map {
         grid-column: 2/3;
-        grid-row: 3/5;
+        grid-row: 3/6;
         margin: 1em;
+        padding-top: 0;
     }
     
 }
