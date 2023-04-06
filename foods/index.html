@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bountiful Foods</title>
+        <meta name="description" content="Bountiful Foods is small business specializing in organic, locally grown foods. We are physically located in Carlsbad, California, however, we have many food trucks that cover the coastal area from Los Angeles to San Diego. We sell fruits and produce directly from the farmers in the area, but also using some national and international suppliers.">
+        <meta name="author" content="Mónica Barrera">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
+        <script defer src="scripts/app.js"></script>
+        <script defer src="scripts/weather-api.js"></script>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <a href="#" class="logo-header"><img src="images/weather/01n.png" alt="Bountiful Foods Logo"></a>
+
+            <h1 class="title-site"><a href="#">Bountiful Foods</a></h1>
+
+            <button id="menu">≡</button>
+
+            <nav class="closed">
+
+                <ul class="navigation">
+
+                    <li><a href="fresh.html">Fresh</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li class="social-media"><a href="https://www.facebook.com/"><img alt="Facebook Icon" src="images/facebook-logo.png"></a></li>
+                    <li class="social-media"><a href="https://www.instagram.com/"><img alt="Instagram Icon" src="images/instagram-logo.png"></a></li>
+                    <li class="social-media"><a href="https://www.tiktok.com/"><img alt="Tiktok Icon" src="images/tiktok-logo.png"></a></li>
+                        
+                </ul>
+
+            </nav>
+
+        </header>
+
+        <main>
+
+            <div class="banner-fresh">
+                <img>
+                <div class="call-to-action">
+                    <p>The perfect drink for you.</p>
+                    <a href="fresh.html" class="fresh-button">Make Your Own</a>
+                </div>
+                
+            </div>
+
+            <div class="areas">
+
+                <h2>Our Areas</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quae, debitis dolorum ex sunt facilis minima illo. Illum amet saepe placeat distinctio eum quaerat ipsa omnis. Esse placeat repudiandae molestias labore tempore nam eius! Natus, debitis eveniet? Labore exercitationem quidem beatae harum a at, dolorem vitae? Obcaecati laborum voluptatem recusandae, itaque odio est fuga sed quae aliquam fugiat fugit commodi?</p>
+
+            </div>
+
+            <div class="weather">
+
+                <h2>Carlsbad, CA</h2>
+
+                <div class="current">
+
+                    <div class="weather-icon-temp">
+                        <img id="weather-icon" alt="Partly Cloudy" src="images/weather/01d.png">
+                        <p><span id="weather-temp">55</span> °F</p>
+                    </div>
+
+                    <p id="weather-desc">Partly Cloudy</p>
+
+                    <div class="weather-humidity">
+                        <p>Humidity: <span id="humidity">20</span></p>
+                        <img src="images/weather/humidity.png" id="humidity-icon">
+                    </div>
+
+                </div>
+            
+                <div class="forecast">
+
+                </div>
+
+            </div>
+
+            <div class="current-drinks">
+
+                <p>Specialty Drinks Submitted: <span id="special-drinks"></span></p>
+
+            </div>
+
+        </main>
+
+        <footer>
+
+            <p>Bountiful Foods | Last Update: <span id="last-update"></span> | <a>Attributions</a></p>
+
+        </footer>
+        
+    </body>
+</html>

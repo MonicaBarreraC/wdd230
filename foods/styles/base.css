@@ -1,0 +1,307 @@
+@media screen and (min-width: 1em) {
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0 auto;
+    }
+
+    h1, h2, h3, h4{
+        font-family: 'Playfair Display', serif;
+    }
+
+    /* -  -  HEADER  -  - */
+    
+    header {
+        background-color: #9EAB0D; 
+        color: white;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+    }
+
+    .title-site {
+        align-self: center;
+        font-size: 25px;
+        transition: 1s;
+    }
+
+    .title-site a {
+        text-decoration: none;
+        padding: 10px;
+        color: white;
+    }
+
+    .closed, .hidden-nav{
+        display: none;
+    }
+
+    .logo-header {
+        max-width: 70px;
+        margin: 0 auto;
+    }
+
+    nav {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        display: block;
+        align-self: center;
+    }
+
+    .active {
+        border: none;
+        background-color: #3D5E67;
+    }
+
+    #menu {
+        font-size: 30px;
+        background-color: transparent;
+        color: white;
+        border: none;
+    }
+
+    .navigation {
+        list-style: none;
+        padding-inline-start: 0;
+        margin: 0;
+    }
+
+    .navigation li:hover {
+        border: none;
+        background-color: #3D5E67;
+    }
+    
+    .navigation a {
+        text-decoration: none;
+        display: block;
+        padding: 12px;
+        text-align: center;
+        color: white;
+        font-weight: 700;
+    }
+
+    .social-media a {
+        align-self: center;
+        height: 32px;
+        padding: 5px;
+    }
+
+    .social-media img {
+        max-width: 20px;
+        margin: 6px;
+    }
+
+    .social-media a:hover {
+        background: rgba(61, 94, 103, 30%);
+        border-radius: 25px;
+        transition: 0.5s;
+    }
+
+    /*  -  -  -  -  - * M A I N * -  -  -  -  -  */
+
+    main {
+        margin: 10px;
+    }
+
+    .banner-fresh {
+        height: 320px;
+        background-color: aliceblue;
+    }
+
+    .call-to-action {
+        position: static;
+        width: fit-content;
+        margin-top: 80px;
+        margin-left: 20px;
+    }
+
+    .call-to-action p {
+        font-weight: bold;
+        padding: 5px;
+        font-size: 1.2rem;
+    }
+    
+    .fresh-button {
+        background-color: #D90057; /*++++++++++++++++++++++++++++++++++++++++++++*/
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 0.75em 1em;
+        border-radius: 25px;
+        transition: 1.5s;
+    }
+
+    .fresh-button:hover {
+        box-shadow: inset 0 0 0 25px #3D5E67;
+    }
+
+    /* .  .  .  .  .  W E A T H E R  .  .  .  .  .  .  */
+
+    .weather {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .weather h2 {
+        grid-column: 1/2;
+        margin: 10px;
+    }
+
+    .current {
+        grid-column: 1/2;
+        text-align: center;
+    }
+
+    .weather-icon-temp {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0;
+        font-size: 35px;
+    }
+
+    .weather-icon-temp p {
+        padding: 10px;
+    }
+
+    .weather-humidity {
+        display: flex;
+        justify-content: center;
+        align-content: end;
+    }
+
+    #weather-temp {
+        font-weight: bold;
+    }
+
+    #weather-desc {
+        margin: 5px;
+        text-transform: capitalize;
+    }
+
+    .weather-humidity img {
+        margin: auto 0;
+        max-height: 20px;
+    }
+
+    .forecast {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        row-gap: 10px;
+        margin-top: 1em;
+    }
+
+    .forecast section{
+        background-color: #F9F9F9;
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .forecast p {
+        text-transform: capitalize;
+    }
+
+    .forecast-day {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1.5fr;
+        align-items: center;
+    }
+
+    .forecast-day h3 {
+        font-family: "Montserrat";
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .forecast-day p{
+        padding: 5px;
+    }
+
+    /* .  .  .  .  .  D R I N K S  .  .  .  .  .  .  */
+
+    .current-drinks p{
+        background-color: aquamarine;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold; /*+++++++++++++++++++++++++++++*/
+    }
+    
+
+    /*  -  -  -  -  -  * F O O T E R * -  -  -  -  -  */
+
+    footer {
+        background-color: #9EAB0D; /*+++++++++++++++++++++++++++++++*/
+        color: white;
+        padding: 0.5em;
+        text-align: center;
+    }
+
+    /*  -  -  -  -  -  F R E S H  -  -  -  -  -  */
+
+    #submit-btn {
+        background-color: #D90057;
+        color: white;
+        padding: 0.75em 1.5em;
+        margin: 5px;
+        border: none;
+        border-radius: 25px;
+        transition: 1.5s;
+    }
+
+    form fieldset {
+        margin: 1.5em 0;
+        border: 1px solid; /*- --------------------------*/
+        border-radius: 15px; 
+        padding: 15px 2%;
+    }
+
+    form legend {
+        padding: 0 5px;
+        margin: 0 10px;
+    }
+
+    form label.top, .form label.top textarea {
+        display: block;
+        padding-top: 1em;
+        font-size: 14px;
+    }
+
+    form label.top input, form select, form label.top textarea {
+        display: block;
+        font-size: 16px;
+        padding: 12px;
+        border: gray solid 1px; /*- --------------------------*/
+        background-color: rgba(135, 151, 178, 0.1); /*---------------------*/
+        border-radius: 8px;
+        width: 90%;
+        max-width: 20em;
+    }
+
+    form label.top input:required, form select:required {
+        border: gray solid 1px; /*- --------------------------*/
+        /*background-color: rgba(217, 0, 87, 0.2); /*---------------------*/
+    }
+
+    form select {
+        margin: 2px 0 10px 0;
+        width: 100%;
+        max-width: 21.5em;
+    } 
+    
+    form select:last-child {
+        margin-bottom: 0;
+    }
+
+    /*  -  -  -  -  -  A B O U T  U S  -  -  -  -  -  */
+
+    
+    /*background-color: #9EAB0D;*/
+    /*background-color: #F2C744;*/
+    /*color: black;*/
+    
+}
