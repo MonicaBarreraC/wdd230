@@ -87,4 +87,10 @@
         display: block;
     }
 
+    /**/
+
+    .summary {
+        width: 70%;    
+    }
+
 }
