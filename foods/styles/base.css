@@ -241,6 +241,13 @@
         text-align: center;
     }
 
+
+    footer a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
     /*  -  -  -  -  -  F R E S H  -  -  -  -  -  */
 
     #submit-btn {
