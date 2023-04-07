@@ -71,6 +71,15 @@
         margin-left: 1em;
     }
 
+    .about-main h2 {
+        bottom: 150px;
+    }
+
+    p.email {
+        font-size: 1rem;
+        transition: 1s;
+    }
+
     .about-main .map {
         grid-column: 2/3;
         grid-row: 3/6;
