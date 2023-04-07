@@ -287,6 +287,10 @@
 
     /*  -  -  -  -  -  F R E S H  -  -  -  -  -  */
 
+    .timestamp {
+        font-style: italic;
+    }
+
     .summary {
         grid-column: 1/2;
         grid-row: 2/3;

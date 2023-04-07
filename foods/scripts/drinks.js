@@ -114,6 +114,7 @@ function displayOrder() {
 
     // Order Date
     orderDate.textContent = `Order Date: ${timestamp}`;
+    orderDate.setAttribute("class", "timestamp");
     
     // Nutritional Data
 
@@ -148,8 +149,17 @@ function displayOrder() {
     summary.appendChild(personalInfo);
     summary.appendChild(ingredients);
     summary.appendChild(instructions);
-    summary.appendChild(orderDate);
     summary.appendChild(nutritionalData);
+    summary.appendChild(orderDate);
+
+    // Update Number of Drinks
+    let nDrinks = Number(window.localStorage.getItem("current-drinks"));
+    nDrinks++;
+    window.localStorage.setItem("current-drinks", nDrinks);
+
+    // Reset Form
+    //document.querySelector("form").setAttribute("onsubmit", "return false;");
+    document.querySelector("form").reset();
 
 }
 
