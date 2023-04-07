@@ -24,3 +24,11 @@ document.querySelector("#copyright-year").textContent = `© ${year}`;
 
 // Last Update
 document.querySelector("#last-update").textContent = `Last Updated: ${document.lastModified}`;
+
+// -  -  -  -  -  -  D R I N K S -  -  -  -  -  - 
+
+document.querySelector("#special-drinks").textContent = "0";
+
+if (document.querySelector("#special-drinks") != null){
+    document.querySelector("#special-drinks").textContent =  window.localStorage.getItem("current-drinks");
+}
