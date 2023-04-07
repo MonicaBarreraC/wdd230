@@ -350,6 +350,14 @@
         border: gray solid 1px; /*- --------------------------*/
     }
 
+    form label.top input:invalid, form select:invalid  {
+        border-left: #D90057 solid 6px;
+    }
+    
+    form label.top input:required:valid, form select:required:valid {
+        border-left: #9EAB0D solid 6px;
+    }
+
     form select {
         margin: 2px 0 10px 0;
         width: 100%;
@@ -442,11 +450,5 @@
         width: 100%;
         padding-top: 10px;
     }
-
-
-    
-    /*background-color: #9EAB0D;*/
-    /*background-color: #F2C744;*/
-    /*color: black;*/
     
 }
