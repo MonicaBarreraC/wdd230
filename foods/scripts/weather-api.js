@@ -11,9 +11,9 @@ let forecastList = [];
 const currentDay = new Date().getDay();
 const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "Monday", "Tuesday"];
 
-async function apiFetch() {
+const url = "http://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&appid=4c0f9bbc39fef5d82166c66bab59f1ed&units=imperial";
 
-  const url = "http://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&appid=4c0f9bbc39fef5d82166c66bab59f1ed&units=imperial";
+async function apiFetch() {
 
   try {
     const response = await fetch(url);
