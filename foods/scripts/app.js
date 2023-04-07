@@ -27,7 +27,7 @@ document.querySelector("#last-update").textContent = `Last Updated: ${document.l
 
 // -  -  -  -  -  -  D R I N K S -  -  -  -  -  - 
 
-document.querySelector("#special-drinks").textContent = "0";
+//document.querySelector("#special-drinks").textContent = "0";
 
 if (document.querySelector("#special-drinks") != null){
     document.querySelector("#special-drinks").textContent =  window.localStorage.getItem("current-drinks");
