@@ -19,6 +19,12 @@
         grid-template-columns: 1fr 5fr 1fr;
     }
 
+    .logo-header img{
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+
     .title-site {
         align-self: center;
         font-size: 25px;
