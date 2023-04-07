@@ -2,13 +2,16 @@
 
 const ingredientsUrl = "https://brotherblazzard.github.io/canvas-content/fruit.json";
 
+let localIngredientsData = "";
+
 async function getIngredientsData() {
     const response = await fetch(ingredientsUrl);
     const data = await response.json();
 
     // Display Options
     displayOptions(data);
-    //console.log(data);
+    localIngredientsData = data;
+    //console.log(localIngredientsData);
 }
 
 const displayOptions = (ingredientsData) => {
@@ -18,7 +21,7 @@ const displayOptions = (ingredientsData) => {
     for (let i = 1; i < 4; i++) {
 
         // Create the selectors
-        let select = document.createElement('select');
+        let select = document.createElement("select");
         select.name = `ingredient-${i}`;
 
         ingredientsData.forEach((ingredient) => {
@@ -26,7 +29,7 @@ const displayOptions = (ingredientsData) => {
             //console.log(ingredient.name);
 
             // Create the options
-            let option = document.createElement('option');
+            let option = document.createElement("option");
             option.textContent = `${ingredient.name}`;
             option.value = `${ingredient.name}`;
 
@@ -51,12 +54,16 @@ function displayOrder() {
 
     const summary = document.querySelector("div.summary");
 
+    // Reset InnerHTML
+    summary.innerHTML = "";
+
     const timestamp = new Date();
 
     // Create elements 
-    let h3 = document.createElement('h3');
-    let personalInfo = document.createElement('div');
-    let ingredients = document.createElement('div');
+    let h3 = document.createElement("h3");
+    let personalInfo = document.createElement("div");
+    let ingredients = document.createElement("div");
+    let instructions = document.createElement("p");
     let orderDate = document.createElement("p");
     let nutritionalData = document.createElement("div");
 
@@ -90,7 +97,7 @@ function displayOrder() {
     let ing2 = document.createElement("li");
     let ing3 = document.createElement("li");
 
-    subtitle.textContent = "Drink Ingredients:"
+    subtitle.textContent = "Drink Ingredients: "
     ing1.textContent = ingredient1.value;
     ing2.textContent = ingredient2.value;
     ing3.textContent = ingredient3.value;
@@ -102,13 +109,14 @@ function displayOrder() {
     ingredients.appendChild(subtitle);
     ingredients.appendChild(ingredientsList);
 
+    // Special Instructions
+    instructions.textContent =  `Special Instructions: ${document.getElementsByName("instructions")[0].value}`
+
     // Order Date
     orderDate.textContent = `Order Date: ${timestamp}`;
-
-    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     
-
     // Nutritional Data
+
     let carbohydrates = document.createElement("p");
     let protein = document.createElement("p");
     let fat = document.createElement("p");
@@ -116,12 +124,13 @@ function displayOrder() {
     let calories = document.createElement("p");
 
     // Total Sum
-    /*
-    const carbSum = ingredient1.nutritions.carbohydrates + ingredient2.nutritions.carbohydrates + ingredient3.nutritions.carbohydrates;
-    const protSum = ingredient1.nutritions.protein + ingredient2.nutritions.protein + ingredient3.nutritions.protein;
-    const fatSum = ingredient1.nutritions.fat + ingredient2.nutritions.fat + ingredient3.nutritions.fat;
-    const sugarSum = ingredient1.nutritions.sugar + ingredient2.nutritions.sugar + ingredient3.nutritions.sugar;
-    const calSum = ingredient1.nutritions.calories + ingredient2.nutritions.calories + ingredient3.nutritions.calories;
+    const arrayIngredients = [ingredient1.value, ingredient2.value, ingredient3.value];
+
+    const carbSum = sumValues(arrayIngredients, "carbs");
+    const protSum = sumValues(arrayIngredients, "protein");
+    const fatSum = sumValues(arrayIngredients, "fat");
+    const sugarSum = sumValues(arrayIngredients, "sugar");
+    const calSum = sumValues(arrayIngredients, "calories");
 
     carbohydrates.textContent = `Carbohydrates: ${carbSum}`;
     protein.textContent = `Protein: ${protSum}`;
@@ -133,23 +142,67 @@ function displayOrder() {
     nutritionalData.appendChild(protein);
     nutritionalData.appendChild(fat);
     nutritionalData.appendChild(sugar);
-    nutritionalData.appendChild(calories);*/
+    nutritionalData.appendChild(calories);
 
     summary.appendChild(h3);
     summary.appendChild(personalInfo);
     summary.appendChild(ingredients);
+    summary.appendChild(instructions);
     summary.appendChild(orderDate);
-    //summary.appendChild(nutritionalData);
+    summary.appendChild(nutritionalData);
 
 }
 
-const membershipCheck = (companies) => {
-    let list = [];
-    companies.forEach((company) => {
-        if(company.membership == "Silver" || company.membership == "Gold"){
-            list.push(company);
-        }
+function searchIngredient(ingredientsList, requiredIngredient, requiredInfo) {
+
+    let info;
+
+    ingredientsList.forEach((ingredient) => {
+
+        if (ingredient.name == requiredIngredient){
+
+            // Carbs
+            if (requiredInfo == "carbs") {
+                info = ingredient.nutritions.carbohydrates;
+            }
+
+            // Protein
+            else if (requiredInfo == "protein") {
+                info = ingredient.nutritions.protein;
+            }
+
+            // Fat
+            else if (requiredInfo == "fat") {
+                info = ingredient.nutritions.fat;
+            }
+
+            // Calories
+            else if (requiredInfo == "calories") {
+                info = ingredient.nutritions.calories;
+            }
+
+            // Sugar
+            else if (requiredInfo == "sugar") {
+                info = ingredient.nutritions.sugar;
+            }
+        }        
     });
 
-    return list;
+    return info;
+
+}
+
+function sumValues(arrayIngredients, requiredInfo) {
+
+    let sum = 0;
+
+    // Search Values
+    for (let i = 0; i < arrayIngredients.length ; i++) {
+
+        value = searchIngredient(localIngredientsData, arrayIngredients[i], requiredInfo);
+        //console.log(value);
+        sum += value;
+    } 
+
+    return sum.toFixed(2);
 }

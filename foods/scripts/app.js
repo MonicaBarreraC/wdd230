@@ -17,6 +17,7 @@ hamButton.addEventListener("click", function(){
 });
 
 // -  -  -  -  -  -  F O O T E R  -  -  -  -  - 
+
 // Get Year
 const year = new Date().getFullYear();
 document.querySelector("#copyright-year").textContent = `© ${year}`;
